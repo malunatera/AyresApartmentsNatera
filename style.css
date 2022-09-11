@@ -32,11 +32,12 @@ header {
     grid-template-areas: 
     "logo menu menu menu menu menu"
     "logo reser reser reser reser reser";
+    background: rgb(223,205,180);
+    background: linear-gradient(0deg, rgba(223,205,180,1) 0%, rgba(107,93,77,1) 100%);
 }
 
 .menuPrincipal{
     grid-area: menu;
-    background-color: #dfcdb4;
     width: auto;
     align-self: center;
     
@@ -49,7 +50,7 @@ nav ul{
     align-items: center;
     list-style: none;
 }
-nav ul li {
+nav ul li{
     background-color: #6b5d4d;    
     padding: 10px;
     width: 20%;
@@ -58,6 +59,9 @@ nav ul li {
     font-weight: 400;
     text-align: center;
     border-radius: 30px;
+}
+nav ul li:hover{
+    transform: scale(0.9);
 }
 nav ul li a{
     text-decoration: none;
@@ -74,7 +78,6 @@ nav ul li a{
 
     padding-top: 5px;
     width: auto;
-    background-color: #dfcdb4;
     position: sticky;
     font-family: 'Acme', sans-serif;
     font-size: 15px;
@@ -112,6 +115,9 @@ nav ul li a{
     border: none;
     font-family: 'Acme', sans-serif;
 }
+.tarifas:hover{
+    transform: scale(1.2)
+}
 
 form select, form input{
     background-color: #dfcdb4;
@@ -125,23 +131,31 @@ form select, form input{
 
 .titulo{
     width: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.bienvenidos{
+.textoTitulo{
     position: absolute;
-    top: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.6839110644257703) 5%, rgba(255,255,255,0) 100%);
+}
+.bienvenidos{
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     color: white;
     filter: drop-shadow(0px 0px 3px black);
 }
 .ayresapartments{
-    position: absolute;
-    top: 50%;
     font-size: 60px;
     font-family: 'Acme', sans-serif;
     font-weight: 400;
@@ -175,20 +189,7 @@ form select, form input{
     grid-template-areas: 
     "p1 p1 ba"
     "caminito p2 p2"
-    "p3 p3 galileo"
-}
-
-.p1, .p2, .p3{
-    padding: 0 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-}
-.ba, .galileo, .caminito{
-    width: 300px;
-    border-radius: 30%;
-    padding: 10px;
-    filter: drop-shadow(0px 0px 8px #6b5d4d);
+    "p3 p3 galileo"   
 }
 .p1{
     grid-area: p1;
@@ -208,9 +209,24 @@ form select, form input{
 .galileo{
     grid-area: galileo;
 }
-.ba, .caminito, .galileo{
-    width: 100%;
+
+.p1, .p2, .p3{
+    padding: 0 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
+.cajaPrincipal p:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
+.ba, .galileo, .caminito{
+    width: 100%;
+    border-radius: 30%;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 8px #6b5d4d);
+}
+
 .opiniones{
     grid-area: opiniones;
     font-size: 80px;
@@ -230,7 +246,7 @@ form select, form input{
 }
 section article {
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Acme', sans-serif;
     font-weight: 300;
     font-size: 12px;
     margin: 20px 0;
@@ -245,6 +261,8 @@ section article p{
 }
 section article img{
     width: 400px;    
+    filter: drop-shadow(0px 0px 2px black);
+    border-radius: 10%;
 }
 
 
@@ -264,9 +282,18 @@ main form label {
     align-items: center;
     position: relative;
 }
-.tituloPrincipal{
+.tituloMenu{
     position: absolute;
-    top: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.6839110644257703) 7%, rgba(255,255,255,0) 100%);
+}
+.tituloPrincipal{
     font-size: 60px;
     font-family: 'Acme', sans-serif;
     font-weight: 400;
@@ -325,7 +352,8 @@ main ul a {
     font-size: 30px;
     padding: 20px;
     color: #6b5d4d;
-    background-color: #dfcdb4;
+    background: rgb(223,205,180);
+    background: radial-gradient(circle, rgba(223,205,180,1) 0%, rgba(255,255,255,1) 100%);    
     text-align: center;
     
 }
@@ -373,7 +401,8 @@ main ul a {
     font-size: 30px;
     padding: 20px;
     color: #6b5d4d;
-    background-color: #dfcdb4;
+    background: rgb(223,205,180);
+    background: radial-gradient(circle, rgba(223,205,180,1) 0%, rgba(255,255,255,1) 100%);    
     text-align: center;
 }
 .ubicacion div a{
