@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Ayres Apartments Natera</title>
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img id="logo" src="../Galeria/LogoSinFondo.png" alt="">
+            <nav class="menuPrincipal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./Servicios.html">Servicios</a></li>
+                    <li><a href="./Ubicaciones.html">Ubicaciones</a></li>
+                    <li><a href="./reservas.html">Reservas</a></li>
+                    <li><a href="./Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>    
+            <form class="reservasInicio">
+                <div class="ubiDepto">
+                    <label for="">Ubicacion</label>
+                    <select name="Ubicacion" id="Ubicacion">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="PalermoApartments">Palermo Apartments</option>
+                        <option value="Recoleta Plaza">Recoleta Plaza Guido</option>
+                        <option value="Ayres de Recoleta">Ayres de Recoleta Uriburu</option>
+                    </select>    
+                </div>
+                <div class="checkin">
+                    <label for="">Check-in</label>
+                    <input type="date">
+                </div>
+                <div class="checkout">
+                    <label for="">Check-out</label>
+                    <input type="date">
+                </div>
+                <div class="tipoHabitacion">
+                    <label for="">Tipo de Habitacion</label>
+                    <select name="Tipo de Habitacion" id="Tipo de Habitacion">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="Doble">Doble</option>
+                        <option value="Triple">Triple</option>
+                        <option value="Cuadruple">Cuadruple</option>
+                    </select>
+                </div>
+                <input class="tarifas" type="submit" value="Ver Tarifas">
+            </form>    
+        </div>
+        <div class="seccionMenu">
+            <video id="video" src="../Galeria/Video 2.mp4" autoplay muted loop></video>
+            <h1 class="tituloPrincipal">RESERVAS</h1>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="">Ubicacion</label><br>
+            <select name="Ubicacion" id="Ubicacion">
+                <option value="PalermoApartments">Palermo Apartments</option>
+                <option value="Recoleta Plaza">Recoleta Plaza Guido</option>
+                <option value="Ayres de Recoleta">Ayres de Recoleta Uriburu</option>
+            </select><br>
+            <label for="">Check-in</label><br>
+            <input type="date"> <br>
+            <label for="">Check-out</label><br>
+            <input type="date"><br>
+            <label for="">Tipo de Habitacion</label><br>
+            <select name="Tipo de Habitacion" id="Tipo de Habitacion">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Doble">Doble</option>
+                <option value="Triple">Triple</option>
+                <option value="Cuadruple">Cuadruple</option>
+            </select><br>
+            <input type="submit" value="Ver Tarifas">
+        </form>
+    </main>
+    <footer>
+        <section class="tituloFooter">
+            <h3>AYRES APARTMENTS</h3>
+            <p>Since 2018</p>
+        </section>
+        <div>
+            <ul class="redesFooter">
+                <p id="redes">Redes Sociales</p>
+                <li>Numero Telefonico: +54 9 11 2712-2739</li>
+                <li><a href="https://api.whatsapp.com/send?phone=5491127122739">Whatsapp: +54 9 11 2712-2739</a></li>
+                <li><a href="https://www.instagram.com/ayresapartments/?utm_medium=copy_link&hl=am-et">Instagram:
+                        @ayresapartments</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Correo:
+                        reservas@ayresapartments.com</a></li>
+            </ul>
+            <img class="imgFooter" src="../Galeria/LogoSinFondo.png" alt="">
+            <iframe class="iframeFooter"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.839389502848!2d-58.425923184770895!3d-34.58293028046496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5846ef8ac7b%3A0xb56b21808c771fb0!2sThames%202313%2C%20C1425%20FIG%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661105365253!5m2!1ses-419!2sar"
+                width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

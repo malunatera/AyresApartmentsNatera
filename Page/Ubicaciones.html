@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Ayres Apartments Natera</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img id="logo" src="../Galeria/LogoSinFondo.png" alt="">
+            <nav class="menuPrincipal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./Servicios.html">Servicios</a></li>
+                    <li><a href="./Ubicaciones.html">Ubicaciones</a></li>
+                    <li><a href="./reservas.html">Reservas</a></li>
+                    <li><a href="./Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>  
+            <form class="reservasInicio">
+                <div class="ubiDepto">
+                    <label for="">Ubicacion</label>
+                    <select name="Ubicacion" id="Ubicacion">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="PalermoApartments">Palermo Apartments</option>
+                        <option value="Recoleta Plaza">Recoleta Plaza Guido</option>
+                        <option value="Ayres de Recoleta">Ayres de Recoleta Uriburu</option>
+                    </select>    
+                </div>
+                <div class="checkin">
+                    <label for="">Check-in</label>
+                    <input type="date">
+                </div>
+                <div class="checkout">
+                    <label for="">Check-out</label>
+                    <input type="date">
+                </div>
+                <div class="tipoHabitacion">
+                    <label for="">Tipo de Habitacion</label>
+                    <select name="Tipo de Habitacion" id="Tipo de Habitacion">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="Doble">Doble</option>
+                        <option value="Triple">Triple</option>
+                        <option value="Cuadruple">Cuadruple</option>
+                    </select>
+                </div>
+                <input class="tarifas" type="submit" value="Ver Tarifas">
+            </form>      
+        </div>
+        <div class="seccionMenu">
+            <video id="video" src="../Galeria/Video 2.mp4" autoplay muted loop></video>
+            <h1 class="tituloPrincipal">UBICACIONES</h1>
+        </div>
+    </header>
+    <main class="ubicacion">
+        <div class="guido">
+            <li>Recoleta Plaza</li>
+            <img class="imgguido" src="../Galeria/Guido/Principal Guido.png" alt="Guido"><br>
+            <a href="https://goo.gl/maps/AVQ9TnkoCepqqLHC6">Guido 1980, C1119AAD CABA, Argentina</a>
+            <p>Ayres Apartments Plaza se encuentra ubicado en pleno corazón de recoleta, muy cerca famoso cementerio de
+                Recoleta, múltiples bares y restaurantes a los alrededores. También se encuentran cerca el centro
+                cultural Recoleta, el Buenos Aires Design y el Recoleta Mall. Los departamentos cuentan con balcón,
+                cocina kitchenette completa con microondas, cuentan con aire acondicionado, zona de comedor, cocina
+                kitchenette y TV de pantalla plana. El departamento está equipado con toallas y ropa de cama, no cuenta
+                con limpieza diaria pero se puede adicionar. El edificio cuenta WIFI, pileta y seguridad virtual 24
+                hs.Nuestro staff trabaja desde una oficina en el hall del edificio.</p>
+        </div>
+        <div class="uriburu">
+            <li>Recoleta Uriburu</li>
+            <img class="imguriburu" src="../Galeria/Uriburu/Principal uri.png" alt="Uriburu"><br>
+            <a href="https://goo.gl/maps/tEEbpRuGsj4o2awA6">Pres. José Evaristo Uriburu 1756, C1114AAT CABA</a>
+            <p>Ayres Recoleta Uriburu se encuentra ubicado en pleno corazón de Recoleta, a metros del famoso Cementerio
+                de Recoleta, frente al Recoleta Mall y con múltiples bares y restaurantes en los alrededores. A su vez,
+                se encuentra muy cerca el centro cultural Recoleta y el Buenos Aires Design, una mezcla de arte,
+                arquitectura y diversión. Los departamentos estan equipados con todo lo necesario para una grata
+                estadía, cuentan con aire acondicionado, zona de comedor, cocina kitchenette completa con microondas y
+                TV de pantalla plana. El departamento está equipado con toallas y ropa de cama, no cuenta con limpieza
+                diaria pero se puede adicionar. El edificio cuenta WIFI gratis, pileta y seguridad virtual 24 hs.Nuestro
+                staff trabaja en el front desk del edificio de 09 a 18 hs.</p>
+        </div>
+        <div class="palermo">
+            <li>Palermo Apartments</li>
+            <img class="imgpalermo" src="../Galeria/Palermo/Principal.png" alt="Palermo"><br>
+            <a href="https://goo.gl/maps/YG3rE1fS4Q7Bm7kC6">Thames 2313, C1425 FIG, Buenos Aires</a>
+            <p>Ayres Apartments Palermo se encuentra en Palermo Soho, a 200 metros de Plaza de Italia, a 300 metros de
+                Distrito Arcos y a 800 metros de Plaza Serrano y Plaza Armenia. Ofrece conexión WiFi gratuita, gimnasio,
+                laundry y pileta al aire libre. Todos los departamentos incluyen TV por cable de pantalla plana,
+                kitchinette con microondas y heladera, baño privado con bañera y artículos de aseo, toallas y ropa de
+                cama. Nuestra oficina atiende en el tercer piso del edificio, oficina 308. Palermo es una opción genial
+                para los viajeros interesados en la vida nocturna, la comida gourmet y los restaurantes.</p>
+        </div>
+    </main>
+    <footer>
+        <section class="tituloFooter">
+            <h3>AYRES APARTMENTS</h3>
+            <p>Since 2018</p>
+        </section>
+        <div>
+            <ul class="redesFooter">
+                <p id="redes">Redes Sociales</p>
+                <li>Numero Telefonico: +54 9 11 2712-2739</li>
+                <li><a href="https://api.whatsapp.com/send?phone=5491127122739">Whatsapp: +54 9 11 2712-2739</a></li>
+                <li><a href="https://www.instagram.com/ayresapartments/?utm_medium=copy_link&hl=am-et">Instagram:
+                        @ayresapartments</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Correo:
+                        reservas@ayresapartments.com</a></li>
+            </ul>
+            <img class="imgFooter" src="../Galeria/LogoSinFondo.png" alt="">
+            <iframe class="iframeFooter"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.839389502848!2d-58.425923184770895!3d-34.58293028046496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5846ef8ac7b%3A0xb56b21808c771fb0!2sThames%202313%2C%20C1425%20FIG%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661105365253!5m2!1ses-419!2sar"
+                width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

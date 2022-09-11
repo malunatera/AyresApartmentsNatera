@@ -1,0 +1,640 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Encabezado de Pagina */
+
+header, main, section, footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+header {
+    width: auto;
+    background-color: #dfcdb4;
+}
+#video {
+    width: 100%;
+}
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    border-radius: 40%;
+    width: 100px;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+.encabezado{
+    padding-top: 15px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "logo menu menu menu menu menu"
+    "logo reser reser reser reser reser";
+}
+
+.menuPrincipal{
+    grid-area: menu;
+    background-color: #dfcdb4;
+    width: auto;
+    align-self: center;
+    
+}
+nav ul{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    background-color: #6b5d4d;    
+    padding: 10px;
+    width: 20%;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+.reservasInicio{    
+    grid-area: reser;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "ubi checkin checkout hab tarif";
+
+    padding-top: 5px;
+    width: auto;
+    background-color: #dfcdb4;
+    position: sticky;
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #6b5d4d;
+}
+
+.ubiDepto{
+    display: flex;
+    flex-direction: column;
+    grid-area: ubi;
+}
+.checkin{
+    display: flex;
+    flex-direction: column;
+    grid-area: checkin;
+}
+.checkout{
+    display: flex;
+    flex-direction: column;
+    grid-area: checkout;
+}
+.tipoHabitacion{
+    display: flex;
+    flex-direction: column;
+    grid-area: hab;
+}
+.tarifas{
+    display: flex;
+    flex-direction: column;
+    grid-area: tarif;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    border: none;
+    font-family: 'Acme', sans-serif;
+}
+
+form select, form input{
+    background-color: #dfcdb4;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    border-radius: 30px;
+    padding: 5px;
+    color: #6b5d4d;
+    border: 6b5d4d 1px solid;
+}
+
+.titulo{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bienvenidos{
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    filter: drop-shadow(0px 0px 3px black);
+}
+.ayresapartments{
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    color: white;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+
+
+/*Pagina Principal*/
+
+
+.inicio{
+    width: auto;
+    padding: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-areas: 
+    "txt txt txt opiniones"
+
+}
+.cajaPrincipal {
+    padding: 10px;
+    grid-area: txt;
+    display: grid;
+    width: auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "p1 p1 ba"
+    "caminito p2 p2"
+    "p3 p3 galileo"
+}
+
+.p1, .p2, .p3{
+    padding: 0 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.ba, .galileo, .caminito{
+    width: 300px;
+    border-radius: 30%;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 8px #6b5d4d);
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.ba{
+    grid-area: ba;
+}
+.caminito{
+    grid-area: caminito;
+}
+.galileo{
+    grid-area: galileo;
+}
+.ba, .caminito, .galileo{
+    width: 100%;
+}
+.opiniones{
+    grid-area: opiniones;
+    font-size: 80px;
+    text-align: center;
+    border: 2px black solid;
+}
+
+/*Galeria*/
+
+.Galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+section article {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 20px 0;
+}
+section article p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    border: #6b5d4d solid 2px;
+    color: white;
+    background-color: #6b5d4d;
+}
+section article img{
+    width: 400px;    
+}
+
+
+main form label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/*Seccion de Menu*/
+
+.seccionMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tituloPrincipal{
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    color: white;
+    filter: drop-shadow(0px 0px 3px black);
+}
+main ul a {
+    padding: 10px;
+}
+
+
+/*Servicios*/
+
+
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "masajes futbol exchange"
+    "tango campo luggage";
+    justify-content: center;
+}
+.masajes{
+    grid-area: masajes;
+}
+.futbol{
+    grid-area: futbol;
+}
+.exchange{
+    grid-area: exchange;
+}
+.tango{
+    grid-area: tango;
+}
+.campo{
+    grid-area: campo;
+}
+.luggage{
+    grid-area: luggage;
+}
+
+.masajes, .futbol, .exchange, .tango, .campo, .luggage{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#imgmasaje, #imgfutbol, #imgluggage, #imgmoneda, #imgtango, #imgcampo {
+    width: 100%;
+}
+
+.servicios div li{
+    list-style: none;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 20px;
+    color: #6b5d4d;
+    background-color: #dfcdb4;
+    text-align: center;
+    
+}
+.servicios div p, .carrusel{
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/*Ubicaciones*/
+
+.ubicacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "palermo guido uriburu";
+    justify-content: center;
+}
+.guido{
+    grid-area: guido;
+}
+.uriburu{
+    grid-area: uriburu;
+}
+.palermo{
+    grid-area: palermo;
+}
+
+.guido, .uriburu, .palermo{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.imgguido, .imgpalermo, .imguriburu{
+    width: 100%;
+}
+.ubicacion div li{
+    list-style: none;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 20px;
+    color: #6b5d4d;
+    background-color: #dfcdb4;
+    text-align: center;
+}
+.ubicacion div a{
+    text-decoration: none;
+    color: #6b5d4d;
+    text-align: center;
+    font-size: 15px;
+}
+.ubicacion div p{
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    margin-top: 20px;
+    width: auto;
+    background-color: #fbeed3;
+    border-top: 2px solid #6b5d4d;
+    border-bottom: 2px solid #6b5d4d;
+}
+footer img {
+    width: 150px;
+    filter: drop-shadow(0px 0px 1px black);
+
+}
+.tituloFooter {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    padding: 40px;
+    background-color: #6b5d4d;
+    color: white;
+}
+footer section h3, #redes {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 0;
+}
+.redesFooter, .imgFooter, .iframeFooter {
+    list-style: none;
+    padding: 5px 30px;
+}
+.redesFooter{
+    display: flex;
+    flex-direction: column;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.redesFooter li a{
+    text-decoration: underline;
+    color: black;
+}
+
+/*Pantalla 768-900*/
+
+@media screen and (max-width:900px) {
+    .encabezado{
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: 
+        "logo menu menu menu menu menu"
+        "reser reser reser reser reser reser";
+    }
+    .reservasInicio{
+        border-top: #6b5d4d 1px solid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+        text-align: center;
+    }
+    .p1, .p2, .p3{
+        padding: 0 50px;
+        text-align: justify;
+    }
+    .Galeria {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    }
+    section article img{ 
+        width: 400px;
+    }
+    .tituloPrincipal{
+        font-size: 30px;
+        }
+    .servicios div li, .ubicacion div li{
+        font-size: 20px;
+    }
+    .servicios div p, .carrusel, .ubicacion div p{
+    font-size: 15px;
+    }
+    .masajes, .futbol, .exchange, .tango, .campo, .luggage, .guido, .uriburu, .palermo{
+        margin: 10px;
+    }
+    footer img {
+    height: 150px;
+    }
+    .redesFooter li{
+    font-size: 10px;
+    }
+    .iframeFooter{
+    width: 200px;
+    }
+    .redesFooter, .imgFooter, .iframeFooter {
+        padding: 5px;
+    }
+    footer div{
+        justify-content: space-between;   
+    } 
+}
+
+
+/*Pantalla 660-768*/
+@media screen and (max-width:660px) {
+    #logo {
+        width: 60px;
+    }  
+    nav ul li {
+        font-size: 15px;
+    }
+    .reservasInicio{    
+    font-size: 10px;
+    }
+    form select, form input{
+            font-size: 10px;
+    }   
+    .bienvenidos{
+        font-size: 20px;
+    }
+    .ayresapartments{
+        font-size: 40px;
+    }
+    .p1, .p2, .p3{
+        padding: 0 50px;
+        text-align: justify;
+        font-size: 15px;
+    }   
+    .inicio{
+        width: auto;
+        padding: 5% 0;
+        display: grid;
+        grid-template-columns: repeat(1fr, 4);
+        grid-template-rows: repeat(1fr, 2);
+        grid-template-areas: 
+        "txt txt txt txt"
+        "opiniones opiniones opiniones opiniones"
+    }    
+
+    .servicios, .ubicacion{
+        display: flex;
+        flex-direction: column;
+    }    
+    #imgmasaje, #imgfutbol, #imgluggage, #imgmoneda, #imgtango, #imgcampo {
+        width: 300px;
+        align-self: center;
+    }        
+    .guido, .uriburu, .palermo{
+        margin: 40px;
+    }
+
+    .imgFooter{
+        height: 100px;
+            width: 90px;
+    }
+    .redesFooter li{
+        font-size: 8px;
+    }
+    .iframeFooter{
+        width: 150px;
+        height: 100px;
+    }
+    .redesFooter, .imgFooter, .iframeFooter {
+        padding: 5px;
+    }
+    footer div{
+        justify-content: space-between;   
+    } 
+}       
+
+
+
+/*Pantalla 320-500*/
+@media screen and (max-width:500px) {
+
+    #logo {
+        width: 40px;
+    }  
+    nav ul li{
+        font-size: 8px;
+    }
+    .reservasInicio{    
+    display: none;
+    }  
+    .encabezado{
+        grid-template-rows: 1fr;
+    }
+    
+    .bienvenidos{
+        font-size: 10px;
+    }
+    .ayresapartments{
+        font-size: 20px;
+    }
+    .p1, .p2, .p3{
+        padding: 0 30px;
+        text-align: justify;
+        font-size: 10px;
+    }   
+    section article img{ 
+        width: auto;
+    }
+    section article {
+        font-size: 8px;
+    }
+    section article p{
+        font-size: 20px;
+    }
+    
+    .guido, .uriburu, .palermo{
+        margin: 20px;
+    }
+    .servicios div li, .ubicacion div li{
+        font-size: 15px;
+    }
+    .servicios div p, .carrusel, .ubicacion div p{
+    font-size: 10px;
+    }
+    .ubicacion div a{
+        font-size: 10px;
+    }    
+
+    footer section h3, #redes {
+        font-size: 15px;
+        padding: 0;
+    }    
+    .imgFooter{
+        height: 60px;
+        width: 50px;
+    }
+    .redesFooter li{
+        font-size: 6px;
+    }
+    .iframeFooter{
+        width: 100px;
+        height: 60px;
+    }
+    .redesFooter, .imgFooter, .iframeFooter {
+        padding: 5px;
+    }
+}       
+
+
+  
