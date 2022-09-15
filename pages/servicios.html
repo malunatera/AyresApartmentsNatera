@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Ayres Apartments Natera</title>
 </head>
@@ -36,7 +38,7 @@
                         <option value="PalermoApartments">Palermo Apartments</option>
                         <option value="Recoleta Plaza">Recoleta Plaza Guido</option>
                         <option value="Ayres de Recoleta">Ayres de Recoleta Uriburu</option>
-                    </select>    
+                    </select>
                 </div>
                 <div class="checkin">
                     <label for="">Check-in</label>
@@ -56,7 +58,7 @@
                     </select>
                 </div>
                 <input class="tarifas" type="submit" value="Ver Tarifas">
-            </form>    
+            </form>
         </div>
         <div class="seccionMenu">
             <video id="video" src="../Galeria/Video 2.mp4" autoplay muted loop></video>
@@ -65,62 +67,75 @@
             </div>
         </div>
     </header>
+
     <main class="servicios">
-        <div class="masajes">
-            <li>Masajes</li>
-            <img id="imgmasaje" src="https://www.estilospa.com/img/glossary/masajes-descontracturante-3324.jpg"
-                alt="imagen1">
-            <p>Comparte la experiencia de un masaje personalizado para vos, seleccionando el tratamiento que más te
-                agrade y adapte a las necesidades. Masajes descontracturantes, relajantes, deportivos o de alivio
-                muscular, circulatorios y drenaje linfático.</p>
+        <div class="card masajes">
+            <img id="imgmasaje" src="https://www.estilospa.com/img/glossary/masajes-descontracturante-3324.jpg" class="card-img-top"
+                alt="img2">
+            <div class="card-body">
+                <h5 class="card-title">Masajes</h5>
+                <p class="card-text">Comparte la experiencia de un masaje personalizado para vos, seleccionando el
+                    tratamiento que más te
+                    agrade y adapte a las necesidades. Masajes descontracturantes, relajantes, deportivos o de alivio
+                    muscular, circulatorios y drenaje linfático.</p>
+                <a href="https://api.whatsapp.com/send?phone=5491127122739" class="reservasServicios btn btn-primary">Reservá acá</a>
+            </div>
         </div>
-        <div class="futbol">
-            <li>Packs de Futbol</li>
-            <img id="imgfutbol"
-                src="https://diariousach.cl/diario/site/artic/20220717/imag/foto_0000000220220717170543/DQHOOZ4JTNG2PNZZBHSDHFE7HY.jpg"
-                alt="imagen2">
-            <p>Disfrute de una agradable estadía en Buenos Aires y aproveche la gran oportunidad de asistir a los
-                mayores eventos deportivos de Argentina donde se desarrolla una atmósfera única en el mundo y donde
-                podrá ser testigo de la verdadera pasión. Además, incluimos traslados desde y hacia los aeropuertos y
-                terminales, un tour guiado a los museos de Boca y River y coordinación permanente durante el partido.
-            </p>
+        <div class="card futbol">
+            <img id="imgfutbol" src="https://diariousach.cl/diario/site/artic/20220717/imag/foto_0000000220220717170543/DQHOOZ4JTNG2PNZZBHSDHFE7HY.jpg" class="card-img-top" alt="img2">
+            <div class="bodyFutbol card-body">
+                <h5 class="card-title">Packs de Futbol</h5>
+                <p class="card-text">Disfrute de una agradable estadía en Buenos Aires y aproveche la gran oportunidad
+                    de asistir a los
+                    mayores eventos deportivos de Argentina donde se desarrolla una atmósfera única en el mundo y donde
+                    podrá ser testigo de la verdadera pasión. Además, incluimos traslados desde y hacia los aeropuertos
+                    y
+                    terminales, un tour guiado a los museos de Boca y River y coordinación permanente durante el
+                    partido.</p>
+                <a href="https://api.whatsapp.com/send?phone=5491127122739" class="reservasServicios btn btn-primary">Reservá acá</a>
+            </div>
         </div>
-        <div class="exchange">
-            <li>Currency Exchange</li>
-            <img id="imgmoneda"
-                src="http://www.guiacolonia.com.uy/cache/com_zoo/images/cambio-dinero-colonia_73e47585e90deb015c9ebfaa230af3c7.jpg"
-                alt="imagen4">
-            <p>Consulta por la mejor tasa de cambio, bajo la seguridad de nuestro compromiso con nuestros huéspedes.
-                Cambiamos USD, EUR Y BRL</p>
+        <div class="card exchange">
+            <img id="imgmoneda" src="http://www.guiacolonia.com.uy/cache/com_zoo/images/cambio-dinero-colonia_73e47585e90deb015c9ebfaa230af3c7.jpg" class="card-img-top" alt="img3">
+            <div class="card-body">
+                <h5 class="card-title">Currency Exchange</h5>
+                <p class="card-text">Consulta por la mejor tasa de cambio, bajo la seguridad de nuestro compromiso con nuestros huéspedes.
+                    Cambiamos USD, EUR Y BRL</p>
+                <a href="https://api.whatsapp.com/send?phone=5491127122739" class="reservasServicios btn btn-primary">Reservá acá</a>
+            </div>
         </div>
-        <div class="tango">
-            <li>Show de Tango</li>
-            <img id="imgtango"
-                src="https://www.telesurtv.net/__export/1544541983867/sites/telesur/img/2018/12/11/tango-sensual-relatossalseros-wordpress-com3-compressor.jpg"
-                alt="imagen5">
-            <p>Ofrecemos tours con Señor Tango, el cual, es uno de los shows más famosos de la Ciudad. Se encuentra
+    </div>
+    <div class="card tango">
+        <img id="imgtango" src="https://www.telesurtv.net/__export/1544541983867/sites/telesur/img/2018/12/11/tango-sensual-relatossalseros-wordpress-com3-compressor.jpg" class="card-img-top" alt="img4">
+        <div class="card-body">
+            <h5 class="card-title">Show de Tango</h5>
+            <p class="card-text">Ofrecemos tours con Señor Tango, el cual, es uno de los shows más famosos de la Ciudad. Se encuentra
                 ubicado en el barrio de Barracas, a pocos minutos del centro. Señor Tango cuenta con servicio de
                 traslados desde nuestra ubicacion.</p>
+            <a href="https://api.whatsapp.com/send?phone=5491127122739" class="reservasServicios btn btn-primary">Reservá acá</a>
         </div>
-        <div class="campo">
-            <li>Dia de Campo</li>
-            <img id="imgcampo"
-                src="https://revista-lagunas.s3.us-east-2.amazonaws.com/2021/10/311-7-lugares-perfectos-para-un-dia-de-campo-en-buenos-aires-124-big.jpg"
-                alt="imagen5">
-            <p>Disfruta de pasar un día de campo diferente y aprovecha de un almuerzo con vista al campo que la rodea,
+    </div>
+    <div class="card campo">
+        <img id="imgcampo" src="https://revista-lagunas.s3.us-east-2.amazonaws.com/2021/10/311-7-lugares-perfectos-para-un-dia-de-campo-en-buenos-aires-124-big.jpg" class="card-img-top" alt="img5">
+        <div class="card-body">
+            <h5 class="card-title">Dia de Campo</h5>
+            <p class="card-text">Disfruta de pasar un día de campo diferente y aprovecha de un almuerzo con vista al campo que la rodea,
                 actividades al aire libre como bicicleteadas, juegos para niños, sulky, un gran predio para pasear y
                 mucho más!</p>
+            <a href="https://api.whatsapp.com/send?phone=5491127122739" class="reservasServicios btn btn-primary">Reservá acá</a>
         </div>
-        <div class="luggage">
-            <li>Luggage Store</li>
-            <img id="imgluggage"
-                src="https://www.mi-maleta.com/wp-content/uploads/2017/06/maletas-juveniles.jpg"
-                alt="imagen6">
-            <p>Podes guardar tu equipaje con nosotros con la mayor seguridad y tranquilidad para que puedas disfrutar de
+    </div>
+    <div class="card luggage">
+        <img id="imgluggage" src="https://www.mi-maleta.com/wp-content/uploads/2017/06/maletas-juveniles.jpg" class="card-img-top" alt="img6">
+        <div class="card-body">
+            <h5 class="card-title">Luggage Store</h5>
+            <p class="card-text">Podes guardar tu equipaje con nosotros con la mayor seguridad y tranquilidad para que puedas disfrutar de
                 tus viajes internos por Buenos Aires.</p>
+            <a href="https://api.whatsapp.com/send?phone=5491127122739" class="reservasServicios btn btn-primary">Reservá acá</a>
         </div>
-        </ul>
+    </div>
     </main>
+    
     <footer>
         <section class="tituloFooter">
             <h3>AYRES APARTMENTS</h3>

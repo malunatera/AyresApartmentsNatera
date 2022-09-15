@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Ayres Apartments Natera</title>
 </head>
@@ -67,7 +69,19 @@
     <main class="ubicacion">
         <div class="guido">
             <li>Recoleta Plaza</li>
-            <img class="imgguido" src="../Galeria/Guido/Principal Guido.png" alt="Guido"><br>
+            <div id="carouselExampleControls" class="imgCarrusel carousel slide" data-bs-ride="carousel">
+                <div class="imgCarrusel carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Galeria/Guido/Principal Guido.png" class="d-block w-100 imgCarrusel" alt="guido1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Galeria/Guido/guido1.png" class="d-block w-100 imgCarrusel" alt="guido2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Galeria/Guido/guido2.png" class="d-block w-100 imgCarrusel" alt="guido3">
+                    </div>
+                </div>
+            </div>
             <a href="https://goo.gl/maps/AVQ9TnkoCepqqLHC6">Guido 1980, C1119AAD CABA, Argentina</a>
             <p>Ayres Apartments Plaza se encuentra ubicado en pleno corazón de recoleta, muy cerca famoso cementerio de
                 Recoleta, múltiples bares y restaurantes a los alrededores. También se encuentran cerca el centro
@@ -79,7 +93,19 @@
         </div>
         <div class="uriburu">
             <li>Recoleta Uriburu</li>
-            <img class="imguriburu" src="../Galeria/Uriburu/Principal uri.png" alt="Uriburu"><br>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../Galeria/Uriburu/Principal uri.png" class="d-block w-100" alt="uri1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../Galeria/Uriburu/uri1.png" class="d-block w-100" alt="uri2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../Galeria/Uriburu/uri2.png" class="d-block w-100" alt="uri3">
+                    </div>
+                </div>
+            </div>            
             <a href="https://goo.gl/maps/tEEbpRuGsj4o2awA6">Pres. José Evaristo Uriburu 1756, C1114AAT CABA</a>
             <p>Ayres Recoleta Uriburu se encuentra ubicado en pleno corazón de Recoleta, a metros del famoso Cementerio
                 de Recoleta, frente al Recoleta Mall y con múltiples bares y restaurantes en los alrededores. A su vez,
@@ -92,7 +118,19 @@
         </div>
         <div class="palermo">
             <li>Palermo Apartments</li>
-            <img class="imgpalermo" src="../Galeria/Palermo/Principal.png" alt="Palermo"><br>
+            <div id="carouselExampleControls" class="imgCarrusel carousel slide" data-bs-ride="carousel">
+                <div class="imgCarrusel carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Galeria/Palermo/Principal.png" class="d-block w-100 imgCarrusel" alt="palermo1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Galeria/Palermo/img2.png" class="d-block w-100 imgCarrusel" alt="palermo2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Galeria/Palermo/img5.png" class="d-block w-100 imgCarrusel" alt="palermo3">
+                    </div>
+                </div>
+            </div>
             <a href="https://goo.gl/maps/YG3rE1fS4Q7Bm7kC6">Thames 2313, C1425 FIG, Buenos Aires</a>
             <p>Ayres Apartments Palermo se encuentra en Palermo Soho, a 200 metros de Plaza de Italia, a 300 metros de
                 Distrito Arcos y a 800 metros de Plaza Serrano y Plaza Armenia. Ofrece conexión WiFi gratuita, gimnasio,
@@ -124,6 +162,9 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

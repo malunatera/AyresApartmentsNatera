@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Ayres Apartments Natera</title>
 </head>
+
 <body>
     <header>
         <div class="encabezado">
@@ -24,7 +29,7 @@
                     <li><a href="./pages/reservas.html">Reservas</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
-            </nav>    
+            </nav>
             <form class="reservasInicio">
                 <div class="ubiDepto">
                     <label for="">Ubicacion</label>
@@ -33,7 +38,7 @@
                         <option value="PalermoApartments">Palermo Apartments</option>
                         <option value="Recoleta Plaza">Recoleta Plaza Guido</option>
                         <option value="Ayres de Recoleta">Ayres de Recoleta Uriburu</option>
-                    </select>    
+                    </select>
                 </div>
                 <div class="checkin">
                     <label for="">Check-in</label>
@@ -53,49 +58,60 @@
                     </select>
                 </div>
                 <input class="tarifas" type="submit" value="Ver Tarifas">
-            </form>    
+            </form>
         </div>
         <div class="titulo">
             <video id="video" src="./Galeria/Video1.mp4" autoplay muted loop></video>
-            <div class= "textoTitulo animate__animated animate__zoomIn">            
+            <div class="textoTitulo animate__animated animate__zoomIn">
                 <p class="bienvenidos">BIENVENIDOS A</p>
                 <h1 class="ayresapartments">AYRES APARTMENTS</h1>
             </div>
         </div>
     </header>
+
     <main class="inicio">
         <div class="cajaPrincipal">
             <p class="p1">Ayres Apartments se encuentra en Palermo Soho y Recoleta para ofrecerte la mejor estadía
-                durante tu viaje. Ofrece conexión WiFi gratuita, gimnasio, laundry y pileta al aire libre.</p>
+                durante tu viaje. Ofrece conexión WiFi gratuita, gimnasio, laundry y pileta al aire libre. Descubra
+                Buenos Aires y todas sus atracciones con nuestra ubicación ideal</p>
             <p class="p2">Todos los departamentos incluyen TV por cable de pantalla plana, kitchinette con microondas y
-                heladera, baño privado con bañera y artículos de aseo, toallas y ropa de cama.</p>
+                heladera, baño privado con bañera y artículos de aseo, toallas y ropa de cama. Nuestros deptos en Buenos
+                Aires cuenta con tecnología de vanguardia e instalaciones excelentes para celebrar eventos en el centro
+                de la ciudad</p>
             <p class="p3">Somos una opción genial para todo tipo de viajero, podes venir por trabajo o recreación, de
-                ambas formas te vamos a brindar la mejor atención.</p>
+                ambas formas te vamos a brindar la mejor atención. Disfrute de acceso a Internet de alta velocidad,
+                centro de negocios, registro de llegada y salida exprés y servicio de concierge cuando se aloje en
+                nuestro hotel de Buenos Aires</p>
             <img class="ba animacionPrincipal" src="./Galeria/BA.png" alt="ba">
             <img class="caminito animacionPrincipal" src="./Galeria/caminito.png" alt="caminito">
             <img class="galileo " src="./Galeria/Galileo.png" alt="galileo">
         </div>
-        <aside class="opiniones">
-            <p class="carrusel">Aca va el carrusel de Opiniones</p>
-        </aside>
     </main>
+
     <section class="Galeria">
-        <article class="Palermo">
-            <img src="./Galeria/Palermo/Principal.png" alt="">
-            <h2>PALERMO APARTMENTS</h2>
-            <p>Ver más</p>
+        <article class="palermoGaleria">
+            <img class="imgGaleria" src="./Galeria/Palermo/Principal.png" alt="">
+            <h2 class="tituloGaleria">PALERMO APARTMENTS</h2>
+            <div class="verMas d-grid gap-2 col-6 mx-auto">
+                <a class="verMas btn btn-primary" href="./pages/ubicaciones.html" type="button">Ver más</a>
+            </div>
         </article>
-        <article class="Uriburu">
-            <img src="./Galeria/Uriburu/Principal uri.png" alt="">
-            <h2>AYRES DE RECOLETA URIBURU</h2>
-            <p>Ver más</p>
+        <article class="uriburuGaleria">
+            <img class="imgGaleria" src="./Galeria/Uriburu/Principal uri.png" alt="">
+            <h2 class="tituloGaleria">AYRES DE RECOLETA URIBURU</h2>
+            <div class="verMas d-grid gap-2 col-6 mx-auto">
+                <a class="verMas btn btn-primary" href="./pages/ubicaciones.html" type="button">Ver más</a>
+            </div>
         </article>
-        <article class="Guido">
-            <img src="./Galeria/Guido/Principal Guido.png" alt="">
-            <h2>RECOLETA PLAZA GUIDO</h2>
-            <p>Ver más</p>
+        <article class="guidoGaleria">
+            <img class="imgGaleria" src="./Galeria/Guido/Principal Guido.png" alt="">
+            <h2 class="tituloGaleria">RECOLETA PLAZA GUIDO</h2>
+            <div class="verMas d-grid gap-2 col-6 mx-auto">
+                <a class="verMas btn btn-primary" href="./pages/ubicaciones.html" type="button">Ver más</a>
+            </div>
         </article>
     </section>
+
     <footer>
         <section class="tituloFooter">
             <h3>AYRES APARTMENTS</h3>
@@ -118,6 +134,9 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
