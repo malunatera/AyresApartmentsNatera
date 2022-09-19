@@ -407,6 +407,7 @@ main ul a {
 .reservasServicios {
     background-color: #6b5d4d;
     border: #6b5d4d;
+    color: white;
 }
 .reservasServicios:hover {
     --bs-btn-hover-bg: #dfcdb4;
@@ -464,7 +465,7 @@ main ul a {
     background: radial-gradient(circle, rgba(223,205,180,1) 0%, rgba(255,255,255,1) 100%);    
     text-align: center;
 }
-.ubicacion div a{
+.ubicacion div .mapa{
     text-decoration: none;
     color: #6b5d4d;
     text-align: center;
