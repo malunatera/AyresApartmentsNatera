@@ -16,7 +16,6 @@ header {
     width: 100%;
 }
 #logo {
-    grid-area: logo;
     justify-self: center;
     border-radius: 40%;
     width: 100px;
@@ -24,35 +23,35 @@ header {
 }
 
 .encabezado{
-    padding-top: 15px;
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     grid-template-areas: 
-    "logo menu menu menu menu menu"
-    "logo reser reser reser reser reser";
+    "menu menu menu menu menu"
+    "reser reser reser reser reser";
     background: rgb(223,205,180);
     background: linear-gradient(0deg, rgba(223,205,180,1) 0%, rgba(107,93,77,1) 100%);
 }
 
 .menuPrincipal{
+    padding: 0;
     grid-area: menu;
     width: auto;
-    align-self: center;
-    
+    justify-content: space-evenly;
 }
-nav ul{
-    width: auto;
+.barra ul{
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     margin: 0%;
     padding: 0%;
 }
-nav ul li{
+.barra ul li{
     background-color: #6b5d4d;    
     padding: 5px;
     width: 20%;
@@ -62,10 +61,10 @@ nav ul li{
     text-align: center;
     border-radius: 30px;
 }
-nav ul li:hover{
+.barra ul li:hover{
     transform: scale(0.9);
 }
-nav ul li a, a:-webkit-any-link {
+nav div .barra ul li a, a:-webkit-any-link {
     text-decoration: none;
     color: white;
     width: auto;
@@ -73,9 +72,10 @@ nav ul li a, a:-webkit-any-link {
 .reservasInicio{    
     grid-area: reser;
     margin: 0;
+    padding: 0;
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr) 0.5fr;
     grid-template-areas: 
     "ubi checkin checkout hab tarif";
 
@@ -91,21 +91,26 @@ nav ul li a, a:-webkit-any-link {
     display: flex;
     flex-direction: column;
     grid-area: ubi;
+    align-self: center;
 }
 .checkin{
     display: flex;
     flex-direction: column;
     grid-area: checkin;
+    align-self: center;
 }
 .checkout{
     display: flex;
     flex-direction: column;
     grid-area: checkout;
+    align-self: center;
 }
 .tipoHabitacion{
     display: flex;
     flex-direction: column;
     grid-area: hab;
+    align-self: center;
+
 }
 .tarifas{
     display: flex;
@@ -547,7 +552,7 @@ footer div{
     .encabezado{
         grid-template-rows: 0.5fr 0.5fr;
         grid-template-areas: 
-        "logo menu menu menu menu menu"
+        "menu menu menu menu menu menu"
         "reser reser reser reser reser reser";
     }
     .reservasInicio{
@@ -604,7 +609,7 @@ footer div{
     #logo {
         width: 60px;
     }  
-    nav ul li {
+    .barra ul li {
         font-size: 15px;
     }
     .reservasInicio{    
@@ -682,7 +687,7 @@ footer div{
     #logo {
         width: 40px;
     }  
-    nav ul li{
+    .barra ul li{
         font-size: 8px;
     }
     .reservasInicio{    

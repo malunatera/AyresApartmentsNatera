@@ -19,16 +19,23 @@
 <body>
     <header>
         <div class="encabezado">
-            <img id="logo" src="../Galeria/LogoSinFondo.png" alt="">
-            <nav class="menuPrincipal">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./ubicaciones.html">Ubicaciones</a></li>
-                    <li><a href="./reservas.html">Reservas</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>  
+            <nav class=" menuPrincipal navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img id="logo" src="../Galeria/LogoSinFondo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="barra collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./servicios.html">Servicios</a></li>
+                            <li><a href="./ubicaciones.html">Ubicaciones</a></li>
+                            <li><a href="./reservas.html">Reservas</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <form class="reservasInicio">
                 <div class="ubiDepto">
                     <label for="">Ubicacion</label>
