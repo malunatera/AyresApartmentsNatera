@@ -158,3 +158,65 @@ header{
     }
         
 }
+
+/*Pantalla 768-900*/
+
+@media screen and (max-width:900px) {
+
+    .encabezado{
+        grid-template-rows: 0.5fr 0.5fr;
+    }
+    .reservasInicio{
+        border-top: #6b5d4d 1px solid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+        text-align: center;
+    }
+}
+
+
+
+/*Pantalla 660-768*/
+@media screen and (max-width:660px) {
+    #logo {
+        width: 60px;
+    }  
+    .barra ul li {
+        font-size: 15px;
+    }
+    .reservasInicio{    
+        font-size: 10px;
+        select, input{
+            font-size: 10px;
+        }
+    }
+    .bienvenidos{
+        font-size: 20px;
+    }
+    .ayresapartments{
+        font-size: 35px;
+    }
+}
+
+
+
+/*Pantalla 320-500*/
+@media screen and (max-width:500px) {
+    #logo {
+        width: 40px;
+    }  
+    .encabezado{
+        grid-template-rows: 1fr;
+        .barra ul li{
+            font-size: 8px;
+        }
+        .reservasInicio{    
+        display: none;
+        }  
+    }
+    .bienvenidos{
+        font-size: 10px;
+    }
+    .ayresapartments{   
+        font-size: 20px;
+    }
+}

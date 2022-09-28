@@ -1,0 +1,106 @@
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "masajes futbol exchange"
+    "tango campo luggage";
+    justify-content: center;
+    div{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+        h5{
+            list-style: none;
+            font-family: $txt-principal;
+            font-weight: 400;
+            font-size: nth($fontsize , 4 );
+            margin-top: 0;
+            padding: 20px;
+            color: $bg-darkbrown;
+            background: rgb(223,205,180);
+            background: radial-gradient(circle, rgba(223,205,180,1) 0%, rgba(255,255,255,1) 100%);    
+            text-align: center;
+        }
+        .boton{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;        
+            a{
+                background-color: $bg-darkbrown;
+                border: $bg-darkbrown;
+                color: white;
+                &:hover{
+                    --bs-btn-hover-bg: #dfcdb4;
+                    --bs-btn-hover-border-color: #dfcdb4; 
+                    --bs-btn-bg: #dfcdb4;
+                    --bs-btn-border-color: #dfcdb4;
+                    --bs-btn-active-bg: #dfcdb4;
+                    --bs-btn-active-border-color: #dfcdb4;                   
+                }
+              
+            }
+        }
+        p{
+            padding-top: 30px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            text-align: justify;        
+        }
+     
+    }
+}
+
+
+.masajes{
+    grid-area: masajes;
+}
+.futbol{
+    grid-area: futbol;
+}
+.exchange{
+    grid-area: exchange;
+}
+.tango{
+    grid-area: tango;
+}
+.campo{
+    grid-area: campo;
+}
+.luggage{
+    grid-area: luggage;
+}
+
+/*Pantalla 768-900*/
+
+@media screen and (max-width:900px) {
+    .servicios{
+        div {
+            margin: 10px;
+            li{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }   
+    } 
+}
+
+
+/*Pantalla 660-768*/
+@media screen and (max-width:660px) {
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 300px;
+            align-self: center;
+        }
+    }
+}

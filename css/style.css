@@ -162,7 +162,60 @@ header .titulo div h1 {
   width: auto;
 }
 
-main div {
+/*Pantalla 768-900*/
+@media screen and (max-width: 900px) {
+  .encabezado {
+    grid-template-rows: 0.5fr 0.5fr;
+  }
+  .reservasInicio {
+    border-top: #6b5d4d 1px solid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+    text-align: center;
+  }
+}
+/*Pantalla 660-768*/
+@media screen and (max-width: 660px) {
+  #logo {
+    width: 60px;
+  }
+  .barra ul li {
+    font-size: 15px;
+  }
+  .reservasInicio {
+    font-size: 10px;
+  }
+  .reservasInicio select, .reservasInicio input {
+    font-size: 10px;
+  }
+  .bienvenidos {
+    font-size: 20px;
+  }
+  .ayresapartments {
+    font-size: 35px;
+  }
+}
+/*Pantalla 320-500*/
+@media screen and (max-width: 500px) {
+  #logo {
+    width: 40px;
+  }
+  .encabezado {
+    grid-template-rows: 1fr;
+  }
+  .encabezado .barra ul li {
+    font-size: 8px;
+  }
+  .encabezado .reservasInicio {
+    display: none;
+  }
+  .bienvenidos {
+    font-size: 10px;
+  }
+  .ayresapartments {
+    font-size: 20px;
+  }
+}
+.inicio div {
   margin: 0 80px;
   padding: 10px;
   grid-area: txt;
@@ -174,23 +227,23 @@ main div {
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
   grid-template-areas: "h2 h2 h2" "p1 p1 ba" "caminito p2 p2" "p3 p3 galileo";
 }
-main div h2 {
+.inicio div h2 {
   grid-area: h2;
   color: #6b5d4d;
   font-family: "Acme", sans-serif;
   font-size: 50px;
 }
-main div p {
+.inicio div p {
   padding: 0 100px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   text-align: center;
 }
-main div p:hover {
+.inicio div p:hover {
   transform: scale(1.2);
   transition: 2s;
 }
-main div img {
+.inicio div img {
   width: 100%;
   border-radius: 30%;
   padding: 10px;
@@ -287,6 +340,303 @@ main div img {
   transition: 1.5s;
 }
 
+/*Pantalla 768-900*/
+@media screen and (max-width: 900px) {
+  .cajaPrincipal {
+    margin: 0 10px;
+  }
+  .cajaPrincipal p {
+    padding: 0 50px;
+  }
+  .Galeria {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Galeria img {
+    width: 400px;
+  }
+}
+/*Pantalla 660-768*/
+@media screen and (max-width: 660px) {
+  .inicio {
+    width: auto;
+    padding: 5% 0;
+  }
+  .inicio p {
+    font-size: 15px;
+  }
+  .inicio img {
+    filter: drop-shadow(0px 0px 2px #6b5d4d);
+    margin: 0%;
+    padding: 0;
+  }
+  .ubiGaleria {
+    margin: 20px 0;
+  }
+  .ubiGaleria section {
+    margin: 10px 0;
+  }
+}
+/*Pantalla 320-500*/
+@media screen and (max-width: 500px) {
+  .cajaPrincipal h2 {
+    font-size: 20px;
+  }
+  .cajaPrincipal p {
+    padding: 0 30px;
+    font-size: 10px;
+  }
+  .ubiGaleria {
+    margin: 10px 0;
+  }
+  .ubiGaleria p {
+    font-size: 20px;
+  }
+  .ubiGaleria section {
+    margin: 20px 0;
+  }
+  .ubiGaleria section article {
+    font-size: 8px;
+  }
+  .ubiGaleria section article img {
+    width: auto;
+  }
+}
+.seccionMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+}
+.seccionMenu div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6839110644) 7%, rgba(255, 255, 255, 0) 100%);
+}
+.seccionMenu div h1 {
+  font-size: 60px;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  color: white;
+  filter: drop-shadow(0px 0px 3px black);
+}
+
+/*Pantalla 768-900*/
+@media screen and (max-width: 900px) {
+  .tituloPrincipal {
+    font-size: 30px;
+  }
+}
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "masajes futbol exchange" "tango campo luggage";
+  justify-content: center;
+}
+.servicios div {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.servicios div img {
+  width: 100%;
+}
+.servicios div h5 {
+  list-style: none;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 0;
+  padding: 20px;
+  color: #6b5d4d;
+  background: rgb(223, 205, 180);
+  background: radial-gradient(circle, rgb(223, 205, 180) 0%, rgb(255, 255, 255) 100%);
+  text-align: center;
+}
+.servicios div .boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.servicios div .boton a {
+  background-color: #6b5d4d;
+  border: #6b5d4d;
+  color: white;
+}
+.servicios div .boton a:hover {
+  --bs-btn-hover-bg: #dfcdb4;
+  --bs-btn-hover-border-color: #dfcdb4;
+  --bs-btn-bg: #dfcdb4;
+  --bs-btn-border-color: #dfcdb4;
+  --bs-btn-active-bg: #dfcdb4;
+  --bs-btn-active-border-color: #dfcdb4;
+}
+.servicios div p {
+  padding-top: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.masajes {
+  grid-area: masajes;
+}
+
+.futbol {
+  grid-area: futbol;
+}
+
+.exchange {
+  grid-area: exchange;
+}
+
+.tango {
+  grid-area: tango;
+}
+
+.campo {
+  grid-area: campo;
+}
+
+.luggage {
+  grid-area: luggage;
+}
+
+/*Pantalla 768-900*/
+@media screen and (max-width: 900px) {
+  .servicios div {
+    margin: 10px;
+  }
+  .servicios div li {
+    font-size: 20px;
+  }
+  .servicios div p {
+    font-size: 15px;
+  }
+}
+/*Pantalla 660-768*/
+@media screen and (max-width: 660px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios img {
+    width: 300px;
+    align-self: center;
+  }
+}
+.ubicacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "palermo guido uriburu";
+  justify-content: center;
+}
+.ubicacion .guido, .ubicacion .palermo, .ubicacion .uriburu {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.ubicacion .guido img, .ubicacion .palermo img, .ubicacion .uriburu img {
+  width: 100%;
+}
+.ubicacion .guido li, .ubicacion .palermo li, .ubicacion .uriburu li {
+  list-style: none;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 20px;
+  color: #6b5d4d;
+  background: rgb(223, 205, 180);
+  background: radial-gradient(circle, rgb(223, 205, 180) 0%, rgb(255, 255, 255) 100%);
+  text-align: center;
+}
+.ubicacion .guido a, .ubicacion .palermo a, .ubicacion .uriburu a {
+  text-decoration: none;
+  color: #6b5d4d;
+  text-align: center;
+  font-size: 15px;
+}
+.ubicacion .guido p, .ubicacion .palermo p, .ubicacion .uriburu p {
+  padding-top: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+}
+.ubicacion .guido .boton, .ubicacion .palermo .boton, .ubicacion .uriburu .boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.ubicacion .guido .boton a, .ubicacion .palermo .boton a, .ubicacion .uriburu .boton a {
+  background-color: #6b5d4d;
+  border: #6b5d4d;
+  color: white;
+}
+.ubicacion .guido .boton a:hover, .ubicacion .palermo .boton a:hover, .ubicacion .uriburu .boton a:hover {
+  --bs-btn-hover-bg: #dfcdb4;
+  --bs-btn-hover-border-color: #dfcdb4;
+  --bs-btn-bg: #dfcdb4;
+  --bs-btn-border-color: #dfcdb4;
+  --bs-btn-active-bg: #dfcdb4;
+  --bs-btn-active-border-color: #dfcdb4;
+}
+
+.guido {
+  grid-area: guido;
+}
+
+.uriburu {
+  grid-area: uriburu;
+}
+
+.palermo {
+  grid-area: palermo;
+}
+
+/*Pantalla 768-900*/
+@media screen and (max-width: 900px) {
+  .ubicacion div {
+    margin: 10px;
+  }
+  .ubicacion div li {
+    font-size: 20px;
+  }
+  .ubicacion div p {
+    font-size: 15px;
+  }
+}
+/*Pantalla 660-768*/
+@media screen and (max-width: 660px) {
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .ubicacion div {
+    margin: 40px;
+  }
+}
+/*Pantalla 320-500*/
+@media screen and (max-width: 500px) {
+  .guido, .uriburu, .palermo {
+    margin: 20px;
+  }
+  .guido a, .uriburu a, .palermo a {
+    font-size: 10px;
+  }
+}
 footer {
   margin-top: 20px;
   width: auto;
@@ -342,6 +692,63 @@ footer div ul li a {
 footer div img {
   width: 150px;
   filter: drop-shadow(0px 0px 1px black);
+}
+
+/*Pantalla 768-900*/
+@media screen and (max-width: 900px) {
+  footer div {
+    justify-content: space-between;
+  }
+  footer div img {
+    padding: 5px;
+    height: 150px;
+  }
+  footer div iframe {
+    padding: 5px;
+    width: 200px;
+  }
+  footer div ul li {
+    font-size: 10px;
+  }
+}
+/*Pantalla 660-768*/
+@media screen and (max-width: 660px) {
+  footer div img {
+    height: 100px;
+    width: 90px;
+  }
+  footer div iframe {
+    width: 150px;
+    height: 100px;
+  }
+  footer div ul li {
+    font-size: 8px;
+  }
+}
+/*Pantalla 320-500*/
+@media screen and (max-width: 500px) {
+  footer section h3 {
+    font-size: 15px;
+    padding: 0;
+  }
+  footer div ul {
+    padding: 5px;
+  }
+  footer div ul p {
+    font-size: 15px;
+    padding: 0;
+  }
+  footer div ul li {
+    font-size: 6px;
+  }
+  footer div img {
+    padding: 5px;
+  }
+  footer div iframe {
+    width: 100px;
+    height: 60px;
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
