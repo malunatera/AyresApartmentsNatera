@@ -36,7 +36,6 @@ header{
             grid-template-areas: 
             "ubi checkin checkout hab tarif";
             width: auto;
-            position: sticky;
             font-family: $txt-principal;
             font-size: nth($fontsize , 1 );
             font-weight: 600;
@@ -162,15 +161,11 @@ header{
 /*Pantalla 768-900*/
 
 @media screen and (max-width:900px) {
-
-    .encabezado{
-        grid-template-rows: 0.5fr 0.5fr;
+.encabezado nav{
+    div .barra ul{
+        flex-direction: column;
     }
-    .reservasInicio{
-        border-top: #6b5d4d 1px solid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
-        text-align: center;
-    }
+}
 }
 
 
@@ -180,43 +175,49 @@ header{
     #logo {
         width: 60px;
     }  
-    .barra ul li {
+    header .encabezado{
+        grid-template-rows: 1fr;
+    }
+    .barra ul li a {
         font-size: 15px;
     }
-    .reservasInicio{    
+    .reservasInicio{   
         font-size: 10px;
-        select, input{
-            font-size: 10px;
+        width: 100%;
+        div{
+            select, input, label{
+                display: none;
+            }
         }
     }
-    .bienvenidos{
-        font-size: 20px;
-    }
-    .ayresapartments{
-        font-size: 35px;
+    .titulo{
+        .textoTitulo{
+            p{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 35px;
+            }
+        }
     }
 }
-
-
 
 /*Pantalla 320-500*/
 @media screen and (max-width:500px) {
     #logo {
         width: 40px;
-    }  
-    .encabezado{
-        grid-template-rows: 1fr;
-        .barra ul li{
-            font-size: 8px;
+    }
+    .barra ul li a{
+        font-size: 12px;
+    }
+    .titulo{
+        .textoTitulo{
+            p{
+                font-size: 10px;
+            }
+            h1{
+                font-size: 20px;
+            }
         }
-        .reservasInicio{    
-        display: none;
-        }  
-    }
-    .bienvenidos{
-        font-size: 10px;
-    }
-    .ayresapartments{   
-        font-size: 20px;
     }
 }

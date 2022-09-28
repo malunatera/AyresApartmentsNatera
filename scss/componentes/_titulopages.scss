@@ -25,11 +25,30 @@
 }
 
 
-/*Pantalla 768-900*/
 
-@media screen and (max-width:900px) {
-    .tituloPrincipal{
-        font-size: 30px;
+
+
+/*Pantalla 660-768*/
+
+@media screen and (max-width:660px) {
+    
+    .seccionMenu{
+        div h1{
+            font-size: 40px;
+
         }
+    }
 }
 
+
+/*Pantalla 320-500*/
+
+@media screen and (max-width:500px) {
+    
+    .seccionMenu{
+        div h1{
+            font-size: 30px;
+
+        }
+    }
+}

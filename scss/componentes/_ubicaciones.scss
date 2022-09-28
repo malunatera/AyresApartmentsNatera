@@ -71,7 +71,7 @@
 
 @media screen and (max-width:900px) {
     .ubicacion{
-        div {
+        .guido, .palermo, .uriburu {
             margin: 10px;
             li{
                 font-size: 20px;
@@ -88,8 +88,11 @@
     .ubicacion{
         display: flex;
         flex-direction: column;
-        div{
+        .guido, .palermo, .uriburu {
             margin: 40px;
+            li{
+                font-size: 30px;
+            }
         }
     }
 }
@@ -97,10 +100,15 @@
 
 /*Pantalla 320-500*/
 @media screen and (max-width:500px) {
-    .guido, .uriburu, .palermo{
-        margin: 20px;
-        a{
-            font-size: 10px;
+    .ubicacion{
+        .guido, .uriburu, .palermo{
+            margin: 20px;
+            li{
+                font-size: 20px;
+            }
+            a{
+                font-size: 10px;
+            }
         }
     }
 }
