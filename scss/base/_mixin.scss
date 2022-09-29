@@ -1,0 +1,6 @@
+@mixin disposicion ($display, $direction, $justify, $aling) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;  
+}

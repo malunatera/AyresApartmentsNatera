@@ -23,16 +23,13 @@ footer{
         }
     }
     div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @extend %disposicionrow;
         flex-wrap: wrap;    
         ul{
             list-style: none;
             padding: 0;
             margin: 0;      
-            display: flex;
-            flex-direction: column;          
+            @extend %disposicioncolumn;
             p{
                 text-align: center;
                 font-family: $txt-principal;

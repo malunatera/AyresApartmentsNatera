@@ -7,8 +7,7 @@
     justify-content: center;
     .guido, .palermo, .uriburu{
         margin: 30px;
-        display: flex;
-        flex-direction: column;
+        @extend %disposicioncolumn;
         img{
             width: 100%;
         }

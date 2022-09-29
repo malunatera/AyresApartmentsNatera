@@ -8,8 +8,7 @@
     justify-content: center;
     div{
         margin: 30px;
-        display: flex;
-        flex-direction: column;
+        @extend %disposicioncolumn;
         img{
             width: 100%;
         }
