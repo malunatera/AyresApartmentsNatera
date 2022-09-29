@@ -23,14 +23,18 @@
 
 
 
-/*Pantalla 660-768*/
+// Pantalla 660-768
 
 @media screen and (max-width:660px) {
     
     .seccionMenu{
-        div h1{
-            font-size: 40px;
-
+        div{
+            p{
+                font-size: 40px;
+            }
+            h1{
+                font-size: 10px;
+            }
         }
     }
 }
@@ -41,9 +45,13 @@
 @media screen and (max-width:500px) {
     
     .seccionMenu{
-        div h1{
-            font-size: 30px;
-
+        div{
+            p{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 8px;
+            }
         }
     }
 }
