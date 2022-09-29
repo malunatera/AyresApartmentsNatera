@@ -67,7 +67,7 @@
         margin: 50px 0;    
     }
     section{
-        @extend %disposicionrow;
+        @include disposicion(flex, row, space-evenly, center);
         flex-wrap: wrap;
         margin: 60px 0 150px;
         padding: 0;    

@@ -5,18 +5,28 @@
 
 /*Brackgrown Color*/
 /*Font Family*/
-footer div, .ubiGaleria section, .barra ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+.seccionMenu div p, header .titulo div .ayresapartments {
+  font-family: "Acme", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+  filter: drop-shadow(0px 0px 3px black);
 }
 
-footer div ul, .ubicacion .guido, .ubicacion .palermo, .ubicacion .uriburu, .servicios div, .seccionMenu div, .seccionMenu, header .titulo div, header .titulo, header .encabezado .reservasInicio .tarifas, header .encabezado .reservasInicio .tipoHabitacion, header .encabezado .reservasInicio .checkout, header .encabezado .reservasInicio .checkin, header .encabezado .reservasInicio .ubiDepto {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
+header .titulo div p {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  filter: drop-shadow(0px 0px 3px black);
+}
+
+.seccionMenu div h1, header .titulo div h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  filter: drop-shadow(0px 0px 3px black);
 }
 
 #video {
@@ -64,19 +74,39 @@ header .encabezado .reservasInicio {
 }
 header .encabezado .reservasInicio .ubiDepto {
   grid-area: ubi;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
 }
 header .encabezado .reservasInicio .checkin {
   grid-area: checkin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
 }
 header .encabezado .reservasInicio .checkout {
   grid-area: checkout;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
 }
 header .encabezado .reservasInicio .tipoHabitacion {
   grid-area: hab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
 }
 header .encabezado .reservasInicio .tarifas {
   grid-area: tarif;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border: none;
   font-family: "Acme", sans-serif;
@@ -98,6 +128,10 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
 header .titulo {
   width: auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: black;
 }
@@ -105,27 +139,28 @@ header .titulo div {
   position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: black;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.6839110644) 7%, rgba(255, 255, 255, 0) 100%);
 }
-header .titulo div p {
-  font-size: 30px;
-  font-family: "Lato", sans-serif;
-  color: white;
-  filter: drop-shadow(0px 0px 3px black);
+header .titulo div .ayresapartments {
+  margin: 0;
 }
 header .titulo div h1 {
-  font-size: 60px;
-  font-family: "Acme", sans-serif;
-  font-weight: 400;
-  color: white;
-  filter: drop-shadow(0px 0px 3px black);
+  margin: 0;
 }
 
 .barra ul {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   list-style: none;
   margin: 0%;
   padding: 0%;
@@ -176,8 +211,11 @@ header .titulo div h1 {
   .titulo .textoTitulo p {
     font-size: 20px;
   }
-  .titulo .textoTitulo h1 {
+  .titulo .textoTitulo .ayresapartments {
     font-size: 35px;
+  }
+  .titulo .textoTitulo h1 {
+    font-size: 10px;
   }
 }
 /*Pantalla 320-500*/
@@ -191,8 +229,11 @@ header .titulo div h1 {
   .titulo .textoTitulo p {
     font-size: 10px;
   }
-  .titulo .textoTitulo h1 {
+  .titulo .textoTitulo .ayresapartments {
     font-size: 20px;
+  }
+  .titulo .textoTitulo h1 {
+    font-size: 8px;
   }
 }
 .inicio div {
@@ -265,6 +306,10 @@ header .titulo div h1 {
   margin: 50px 0;
 }
 .ubiGaleria section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   margin: 60px 0 150px;
   padding: 0;
@@ -392,6 +437,10 @@ header .titulo div h1 {
   }
 }
 .seccionMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: black;
 }
@@ -399,18 +448,14 @@ header .titulo div h1 {
   position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: rgb(0, 0, 0);
   background: radial-gradient(circle, rgba(0, 0, 0, 0.6839110644) 7%, rgba(255, 255, 255, 0) 100%);
 }
-.seccionMenu div h1 {
-  font-size: 60px;
-  font-family: "Acme", sans-serif;
-  font-weight: 400;
-  color: white;
-  filter: drop-shadow(0px 0px 3px black);
-}
-
 /*Pantalla 660-768*/
 @media screen and (max-width: 660px) {
   .seccionMenu div h1 {
@@ -432,6 +477,10 @@ header .titulo div h1 {
 }
 .servicios div {
   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
 }
 .servicios div img {
   width: 100%;
@@ -535,6 +584,10 @@ header .titulo div h1 {
 }
 .ubicacion .guido, .ubicacion .palermo, .ubicacion .uriburu {
   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
 }
 .ubicacion .guido img, .ubicacion .palermo img, .ubicacion .uriburu img {
   width: 100%;
@@ -657,12 +710,20 @@ footer section p {
   filter: drop-shadow(0px 0px 3px black);
 }
 footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 }
 footer div ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 footer div ul p {
   text-align: center;

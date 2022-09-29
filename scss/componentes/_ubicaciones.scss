@@ -7,7 +7,7 @@
     justify-content: center;
     .guido, .palermo, .uriburu{
         margin: 30px;
-        @extend %disposicioncolumn;
+        @include disposicion(flex, column, none, none);
         img{
             width: 100%;
         }
@@ -17,9 +17,9 @@
             font-weight: 400;
             font-size: nth($fontsize , 4 );
             padding: 20px;
-            color: $bg-darkbrown;
-            background: rgb(223,205,180);
-            background: radial-gradient(circle, rgba(223,205,180,1) 0%, rgba(255,255,255,1) 100%);    
+            color: map-get($map: $tituloCard, $key: color);
+            background: map-get($map: $tituloCard, $key: bgCard);
+            background: map-get($map: $tituloCard, $key: bgCard2);    
             text-align: center;        
         }
         a{
