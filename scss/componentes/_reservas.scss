@@ -1,0 +1,145 @@
+
+.reservas{
+    @include disposicion(flex, row, space-evenly, center);
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 10px;
+    background-color: $bg-lightbrown; 
+    border-radius: 10px;  
+    div{
+        @include disposicion(flex, column, center, none);
+        width: 300px;
+        height: 100px;
+        label{
+            font-family: $txt-principal;
+            color: $bg-darkbrown;
+            font-size: 20px;
+        }
+        select, input{
+            font-family: $txt-secundario;
+            font-size: 15px;
+            border-radius: 10px;
+            padding: 5px;
+            color: $bg-darkbrown;
+            border: $bg-darkbrown 1px solid;
+            margin: 0;  
+        }
+    }
+}
+
+.input{
+    @include disposicion(flex, column, none, center);
+    a{
+        background-color: $bg-darkbrown;
+        font-family: $txt-principal;
+        font-size: 20px;
+        border: $bg-darkbrown;
+        color: white;
+        margin: 10px;
+        width: 50%;
+        &:hover{
+            --bs-btn-hover-bg: #dfcdb4;
+            --bs-btn-hover-border-color: #dfcdb4; 
+            --bs-btn-bg: #dfcdb4;
+            --bs-btn-border-color: #dfcdb4;
+            --bs-btn-active-bg: #dfcdb4;
+            --bs-btn-active-border-color: #dfcdb4;                   
+        }
+    }
+    p{
+        font-family: $txt-principal;
+        color: red;
+        font-size: 20px;
+        text-align: center;
+    }
+    .cajaTarifa{
+        @include disposicion(flex, row, space-evenly, none);
+        flex-wrap: wrap;  
+    }
+    .seleccionador{
+        width: 20px;
+        height: 20px;
+    }
+    .seleccionador:checked{
+            background-color: red;
+            border-color: red;
+    }
+    .precio{
+        width: 300px;
+        background-color: red;
+        border-radius: 10px;
+        margin: 10px 0;
+        h4{
+        font-family: $txt-principal;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        }
+    }
+    .tarifario{
+        h5{
+            font-family: $txt-principal;
+            font-size: 20px;
+            text-align: center;
+            color: $bg-darkbrown;   
+        }
+        li{
+            font-family: $txt-secundario;
+            color: $bg-darkbrown;
+            font-size: 15px;
+            list-style: none;
+            img{
+                width: 25px;
+            }
+        }
+    }
+}
+
+.formularioReserva{
+    margin: 50px;
+    padding: 10px;
+    background-color: $bg-lightbrown;
+    border-radius: 10px;
+    div p{
+        font-family: $txt-principal;
+        font-size: 30px;
+        color: $bg-darkbrown;
+        text-align: center;
+    }
+    div{
+        font-family: $txt-principal;
+        font-weight: 200;
+        color: $bg-darkbrown;
+        select, input{
+            font-family: $txt-secundario;
+            font-size: 15px;
+            border-radius: 10px;
+            padding: 5px;
+            color: $bg-darkbrown;
+            border: $bg-darkbrown 1px solid;
+            margin: 0;  
+        }
+    }
+    .botonReserva{
+        @include disposicion(flex, column, none, center);
+        button{
+            background-color: $bg-darkbrown;
+            font-family: $txt-principal;
+            font-size: 20px;
+            border: $bg-darkbrown;
+            color: white;
+            margin: 10px;
+            width: 50%;
+            &:hover{
+                --bs-btn-hover-bg: #dfcdb4;
+                --bs-btn-hover-border-color: #dfcdb4; 
+                --bs-btn-bg: #dfcdb4;
+                --bs-btn-border-color: #dfcdb4;
+                --bs-btn-active-bg: #dfcdb4;
+                --bs-btn-active-border-color: #dfcdb4; 
+                color: $bg-darkbrown;            
+                border: $bg-darkbrown 3px solid;
+            }
+        }       
+    }
+}

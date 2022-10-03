@@ -61,7 +61,7 @@ header .encabezado .menuPrincipal {
 }
 header .encabezado .reservasInicio {
   grid-area: reser;
-  margin: 0;
+  margin: 0 30px;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
@@ -689,6 +689,178 @@ header .titulo div h1 {
     font-size: 10px;
   }
 }
+.reservas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  padding: 10px;
+  background-color: #dfcdb4;
+  border-radius: 10px;
+}
+.reservas div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  width: 300px;
+  height: 100px;
+}
+.reservas div label {
+  font-family: "Acme", sans-serif;
+  color: #6b5d4d;
+  font-size: 20px;
+}
+.reservas div select, .reservas div input {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  color: #6b5d4d;
+  border: #6b5d4d 1px solid;
+  margin: 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.input a {
+  background-color: #6b5d4d;
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  border: #6b5d4d;
+  color: white;
+  margin: 10px;
+  width: 50%;
+}
+.input a:hover {
+  --bs-btn-hover-bg: #dfcdb4;
+  --bs-btn-hover-border-color: #dfcdb4;
+  --bs-btn-bg: #dfcdb4;
+  --bs-btn-border-color: #dfcdb4;
+  --bs-btn-active-bg: #dfcdb4;
+  --bs-btn-active-border-color: #dfcdb4;
+}
+.input p {
+  font-family: "Acme", sans-serif;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+.input .cajaTarifa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: wrap;
+}
+.input .seleccionador {
+  width: 20px;
+  height: 20px;
+}
+.input .seleccionador:checked {
+  background-color: red;
+  border-color: red;
+}
+.input .precio {
+  width: 300px;
+  background-color: red;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.input .precio h4 {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.input .tarifario h5 {
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #6b5d4d;
+}
+.input .tarifario li {
+  font-family: "Lato", sans-serif;
+  color: #6b5d4d;
+  font-size: 15px;
+  list-style: none;
+}
+.input .tarifario li img {
+  width: 25px;
+}
+
+.formularioReserva {
+  margin: 50px;
+  padding: 10px;
+  background-color: #dfcdb4;
+  border-radius: 10px;
+}
+.formularioReserva div p {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  color: #6b5d4d;
+  text-align: center;
+}
+.formularioReserva div {
+  font-family: "Acme", sans-serif;
+  font-weight: 200;
+  color: #6b5d4d;
+}
+.formularioReserva div select, .formularioReserva div input {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  color: #6b5d4d;
+  border: #6b5d4d 1px solid;
+  margin: 0;
+}
+.formularioReserva .botonReserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.formularioReserva .botonReserva button {
+  background-color: #6b5d4d;
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  border: #6b5d4d;
+  color: white;
+  margin: 10px;
+  width: 50%;
+}
+.formularioReserva .botonReserva button:hover {
+  --bs-btn-hover-bg: #dfcdb4;
+  --bs-btn-hover-border-color: #dfcdb4;
+  --bs-btn-bg: #dfcdb4;
+  --bs-btn-border-color: #dfcdb4;
+  --bs-btn-active-bg: #dfcdb4;
+  --bs-btn-active-border-color: #dfcdb4;
+  color: #6b5d4d;
+  border: #6b5d4d 3px solid;
+}
+
+.cajaContactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.cajaContactos .cajaUbi {
+  width: 50%;
+}
+.cajaContactos .contacto {
+  width: 50%;
+}
+
 footer {
   margin-top: 20px;
   width: auto;
@@ -717,11 +889,34 @@ footer section p {
 footer div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-footer div ul {
+footer div .menuFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer div .menuFooter div ul {
+  margin: 0;
+}
+footer div .menuFooter div ul li {
+  list-style: circle;
+  text-align: start;
+}
+footer div .menuFooter div ul li a {
+  text-decoration: none;
+  color: #6b5d4d;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+footer div .menuFooter div ul li a:hover {
+  filter: drop-shadow(0px 0px 3px #6b5d4d);
+}
+footer div .redesFooter {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -730,31 +925,39 @@ footer div ul {
   justify-content: center;
   align-items: center;
 }
-footer div ul p {
+footer div .redesFooter p {
   text-align: center;
   font-family: "Acme", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  color: #6b5d4d;
   padding: 0;
   margin: 0;
 }
-footer div ul li a {
-  text-decoration: underline;
-  color: black;
-  padding: 0;
-  margin: 0;
+footer div .redesFooter li {
+  color: #6b5d4d;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
-footer div img {
+footer div .redesFooter li .redes {
+  width: 40px;
+  height: 40px;
+}
+footer div .redesFooter li .redes img {
+  width: 100%;
+}
+footer div .imgFooter {
   width: 150px;
-  filter: drop-shadow(0px 0px 1px black);
+  filter: drop-shadow(0px 0px 2px black);
 }
 
 /*Pantalla 768-900*/
 @media screen and (max-width: 900px) {
-  footer div {
-    justify-content: space-between;
+  footer div .menuFooter div ul li a {
+    font-size: 15px;
   }
-  footer div img {
+  footer div .menuFooter .imgFooter {
     padding: 5px;
     height: 150px;
   }
@@ -762,13 +965,16 @@ footer div img {
     padding: 5px;
     width: 200px;
   }
-  footer div ul li {
+  footer div .redesFooter li {
     font-size: 10px;
   }
 }
 /*Pantalla 660-768*/
 @media screen and (max-width: 660px) {
-  footer div img {
+  footer div .menuFooter div ul li a {
+    font-size: 10px;
+  }
+  footer div .menuFooter .imgFooter {
     height: 100px;
     width: 90px;
   }
@@ -786,18 +992,29 @@ footer div img {
     font-size: 15px;
     padding: 0;
   }
-  footer div ul {
+  footer div .redesFooter {
     padding: 5px;
   }
-  footer div ul p {
+  footer div .redesFooter p {
     font-size: 15px;
     padding: 0;
   }
-  footer div ul li {
+  footer div .redesFooter li {
     font-size: 6px;
   }
-  footer div img {
-    padding: 5px;
+  footer div .redesFooter li .redes {
+    width: 20px;
+    height: 20px;
+  }
+  footer div .menuFooter .imgFooter {
+    height: 80px;
+    width: 70px;
+  }
+  footer div .menuFooter div ul {
+    padding: 8px;
+  }
+  footer div .menuFooter div ul li a {
+    font-size: 8px;
   }
   footer div iframe {
     width: 100px;

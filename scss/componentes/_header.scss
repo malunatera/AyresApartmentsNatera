@@ -29,7 +29,7 @@ header{
         }
         .reservasInicio{
             grid-area: reser;
-            margin: 0;
+            margin: 0 30px;
             padding: 0;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;

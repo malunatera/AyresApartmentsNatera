@@ -1,0 +1,10 @@
+.cajaContactos{
+    @include disposicion(flex, row, space-evenly, center);
+    width: 100%;
+    .cajaUbi{
+        width: 50%;
+    }
+    .contacto{
+        width: 50%;
+    }
+}

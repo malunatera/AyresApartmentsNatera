@@ -23,9 +23,30 @@ footer{
         }
     }
     div{
-        @include disposicion(flex, row, space-evenly, center);
+        @include disposicion(flex, row, space-between, center);
         flex-wrap: wrap;    
-        ul{
+        .menuFooter{
+            @include disposicion(flex, row, center, center);
+            div ul{
+                margin: 0;
+                li{
+                    list-style: circle;
+                    text-align: start;
+                    a{
+                        text-decoration: none;
+                        color: $bg-darkbrown;
+                        font-family: $txt-secundario;
+                        font-weight: 400;
+                        font-size: nth($fontsize , 2 ); 
+                        &:hover{
+                           filter: drop-shadow(0px 0px 3px $bg-darkbrown);       
+                        }       
+                    }    
+                }
+            }
+
+        }
+        .redesFooter{
             list-style: none;
             padding: 0;
             margin: 0;      
@@ -35,21 +56,28 @@ footer{
                 font-family: $txt-principal;
                 font-weight: 400;
                 font-size: nth($fontsize , 2 );
+                color: $bg-darkbrown;
                 padding: 0;
                 margin: 0;
             }
             li{
-                a{
-                    text-decoration: underline;
-                    color: black;
-                    padding: 0;
-                    margin: 0;                
-                }
+                color: $bg-darkbrown;
+                font-family: $txt-secundario;
+                font-weight: 400;
+                font-size: nth($fontsize , 1 );     
+                .redes{
+                    width: 40px;
+                    height: 40px;
+                    img{
+                        width: 100%;
+                    }
+                }   
             }
+            
         }
-        img{
+        .imgFooter{
             width: 150px;
-            filter: drop-shadow(0px 0px 1px black);
+            filter: drop-shadow(0px 0px 2px black);
         }        
     }
 
@@ -60,18 +88,22 @@ footer{
 
 @media screen and (max-width:900px) {
     footer div{
-            justify-content: space-between;   
-            img{
+        .menuFooter{
+            div ul li a{
+                font-size: 15px;
+            }
+            .imgFooter{
                 padding: 5px;
                 height: 150px;
             }
-            iframe{
-                padding: 5px;
-                width: 200px;
-            }
-            ul li{
-                font-size: 10px;
-            }
+        }
+        iframe{
+            padding: 5px;
+            width: 200px;
+        }
+        .redesFooter li{
+            font-size: 10px;
+        }
     }
 }
 
@@ -79,9 +111,14 @@ footer{
 /*Pantalla 660-768*/
 @media screen and (max-width:660px) {
     footer div{
-        img{
-            height: 100px;
-            width: 90px;
+        .menuFooter{
+            div ul li a{
+                font-size: 10px;
+            }
+            .imgFooter{
+                height: 100px;
+                width: 90px;
+            }
         }
         iframe{
             width: 150px;
@@ -104,7 +141,7 @@ footer{
            }
         }
         div{
-            ul{
+            .redesFooter{
                 padding: 5px;
                 p{
                     font-size: 15px;
@@ -112,11 +149,24 @@ footer{
                 }
                 li{
                     font-size: 6px;
+                    .redes{
+                        width: 20px;
+                        height: 20px;    
+                    }
                 }
             }
-            img{
-                padding: 5px;
-            }
+            .menuFooter{
+                .imgFooter{
+                    height: 80px;
+                    width: 70px;
+                }    
+                div ul {
+                    padding: 8px;
+                    li a{
+                        font-size: 8px;
+                    }
+                }
+            }    
             iframe{
                 width: 100px;
                 height: 60px;
