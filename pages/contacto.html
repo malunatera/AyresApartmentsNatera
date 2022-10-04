@@ -92,10 +92,10 @@
         <div class="cajaContactos">
             <div class="cajaUbi">
                 <div class="ubiRecoleta">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <iframe class="card-img-top"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6076321611195!2d-58.396077780008156!3d-34.58879341086116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2e25e2553%3A0x37c7ad0780b4ce03!2sGuido%201980%2C%20C1119AAD%20CABA!5e0!3m2!1ses-419!2sar!4v1664763271874!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
                             <h5 class="card-title">Ubicaciones cercanas a Recoleta</h5>
@@ -111,10 +111,10 @@
                     </div>
                 </div>
                 <div class="ubiThames">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <iframe class="card-img-top"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6076321611195!2d-58.396077780008156!3d-34.58879341086116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2e25e2553%3A0x37c7ad0780b4ce03!2sGuido%201980%2C%20C1119AAD%20CABA!5e0!3m2!1ses-419!2sar!4v1664763271874!5m2!1ses-419!2sar"
-                        width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="card-body">
                             <h5 class="card-title">Ubicaciones cercanas a Palermo</h5>
@@ -136,50 +136,76 @@
                 <p>Complete el siguiente formulario y en breve le enviaremos un presupuesto detallado con nuestros servicios
                     y nuestra mejor oferta</p>
                 <div class="formulario">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                    <form class="formularioReserva row g-3">
+                        <div>
+                            <p>Completa el formulario y envia tu consulta</p>
                         </div>
                         <div class="col-md-6">
-                            <label for="inputPassword4" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4">
+                            <label for="inputApellido4" class="form-label">Nombre</label>
+                            <input type="nombre" class="form-control" id="inputNombre4" placeholder="Juan">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputApellido4" class="form-label">Apellido</label>
+                            <input type="apellido" class="form-control" id="inputApellido4" placeholder="Perez">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="ejemplo@ayresapartments.com">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <label for="inputTelefono" class="form-label">Número de Teléfono</label>
+                            <input type="number" class="form-control" id="inputTelefono" placeholder="+54 11 1234 5678">
                         </div>
                         <div class="col-md-6">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <label for="inputApellido4" class="form-label">País</label>
+                            <input type="text" class="form-control" id="inputNombre4" placeholder="Argentina">
                         </div>
-                        <div class="col-md-4">
-                            <label for="inputState" class="form-label">State</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
+                        <div class="col-md-6">
+                            <label for="inputApellido4" class="form-label">Provincia</label>
+                            <input type="text" class="form-control" id="inputApellido4" placeholder="Buenos Aires">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputID" class="form-label">Cantidad de departamentos</label>
+                            <input type="number" class="form-control" id="inputID" placeholder="0">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputdeptos" class="form-label">Adultos</label>
+                            <select id="inputdeptos" class="form-select">
+                                <option selected>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <label for="inputdeptos" class="form-label">Menores</label>
+                            <select id="inputdeptos" class="form-select">
+                                <option selected>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Consulta o comentario adicional</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribi tu consulta acá"></textarea>
                         </div>
                         <div class="col-12">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
-                                Check me out
+                                    Recibir correo de confirmación
                                 </label>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        <div class="botonReserva col-12">
+                            <button type="submit" class="btn btn-primary">Enviar consulta</button>
                         </div>
-                    </form>
+                    </form>            
                 </div>
             </div>    
         </div>

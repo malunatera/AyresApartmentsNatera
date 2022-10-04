@@ -3,8 +3,43 @@
     width: 100%;
     .cajaUbi{
         width: 50%;
+        margin: 20px 50px;
+        @include disposicion(flex, column, center, space-evenly);
     }
     .contacto{
         width: 50%;
+        margin: 20px 50px;
+        form{
+            margin: 0;
+        }
     }
+}
+
+/*Pantalla 660-768*/
+
+@media screen and (max-width:768px) {
+    .cajaContactos{
+        flex-direction: column;
+        padding: 20px;
+        .cajaUbi{
+            flex-direction: row;
+            width: 100%;
+        }
+        .contacto{
+            width: 80%;
+        }
+    }    
+}
+
+
+/*Pantalla 320-500*/
+@media screen and (max-width:500px) {
+    .cajaContactos{
+        .cajaUbi{
+            flex-direction: column;
+        }
+        .contacto{
+            width: 100%;
+        }
+    }    
 }

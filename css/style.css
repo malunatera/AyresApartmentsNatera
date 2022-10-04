@@ -856,11 +856,43 @@ header .titulo div h1 {
 }
 .cajaContactos .cajaUbi {
   width: 50%;
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
 }
 .cajaContactos .contacto {
   width: 50%;
+  margin: 20px 50px;
+}
+.cajaContactos .contacto form {
+  margin: 0;
 }
 
+/*Pantalla 660-768*/
+@media screen and (max-width: 768px) {
+  .cajaContactos {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .cajaContactos .cajaUbi {
+    flex-direction: row;
+    width: 100%;
+  }
+  .cajaContactos .contacto {
+    width: 80%;
+  }
+}
+/*Pantalla 320-500*/
+@media screen and (max-width: 500px) {
+  .cajaContactos .cajaUbi {
+    flex-direction: column;
+  }
+  .cajaContactos .contacto {
+    width: 100%;
+  }
+}
 footer {
   margin-top: 20px;
   width: auto;
