@@ -190,6 +190,11 @@ header .titulo div h1 {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 718px) {
+  .reservasInicio div select, .reservasInicio div input, .reservasInicio div label {
+    display: none;
+  }
+}
 /*Pantalla 660-768*/
 @media screen and (max-width: 660px) {
   #logo {

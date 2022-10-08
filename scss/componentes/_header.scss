@@ -149,6 +149,15 @@ header{
 }
 
 
+@media screen and (max-width:718px) {
+    .reservasInicio div{
+        select, input, label{
+            display: none;
+        }
+    }
+}
+
+
 
 /*Pantalla 660-768*/
 @media screen and (max-width:660px) {
