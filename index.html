@@ -71,7 +71,7 @@
                     </select>
                 </div>
                 <div class="tarifas">
-                    <input type="submit" value="Ver Tarifas">
+                    <input data-bs-target="" type="submit" value="Ver Tarifas">
                 </div>
             </form>
         </div>
@@ -113,28 +113,106 @@
 
     <div class="ubiGaleria">
         <p>¿DONDE QUERES HACER TU RESERVA?</p>
+        
+        <!-- Palermo -->
         <section class="Galeria">
             <article class="palermoGaleria">
                 <img class="imgGaleria" src="./Galeria/Palermo/Principal.png" alt="palermo">
                 <h2 class="tituloGaleria">PALERMO APARTMENTS</h2>
-                <div class="verMas d-grid gap-2 col-6 mx-auto">
-                    <a class="verMas btn btn-primary" href="./pages/ubicaciones.html" type="button">Ver más</a>
-                </div>
             </article>
+            <button type="botonPalermo button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPalermo">
+                    Galeria de Palermo
+            </button>
+                <div class="modalPalermo modal fade" id="modalPalermo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Galeria de Palermo Apartments</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="fotos modal-body">
+                            <img src="./Galeria/Palermo/Principal.png" alt="palermo1">
+                            <img src="./Galeria/Palermo/img2.png" alt="">
+                            <img src="./Galeria/Palermo/img3.png" alt="">
+                            <img src="./Galeria/Palermo/img4.png" alt="">
+                            <img src="./Galeria/Palermo/img5.png" alt="">    
+                            <img src="./Galeria/Palermo/img6.png" alt="">    
+                            <img src="./Galeria/Palermo/img7.png" alt="">    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"><a href="./pages/reservas.html">Reservá en Palermo</a></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Galeria</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+ 
+            <!-- Uriburu -->
             <article class="uriburuGaleria">
                 <img class="imgGaleria" src="./Galeria/Uriburu/Principal uri.png" alt="uriburu">
                 <h2 class="tituloGaleria">AYRES DE RECOLETA URIBURU</h2>
-                <div class="verMas d-grid gap-2 col-6 mx-auto">
-                    <a class="verMas btn btn-primary" href="./pages/ubicaciones.html" type="button">Ver más</a>
-                </div>
             </article>
+            <button type="botonUri button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalUriburu">
+                Galeria de Uriburu
+            </button>
+            <div class="modalUri modal fade" id="modalUriburu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Galeria de Uriburu Recoleta</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./Galeria/Uriburu/Principal uri.png" alt="palermo1">
+                        <img src="./Galeria/Uriburu/uri1.png" alt="">
+                        <img src="./Galeria/Uriburu/uri2.png" alt="">
+                        <img src="./Galeria/Uriburu/uri3.png" alt="">
+                        <img src="./Galeria/Uriburu/uri4.png" alt="">
+                        <img src="./Galeria/Uriburu/uri5.png" alt="">
+                        <img src="./Galeria/Uriburu/uri6.png" alt="">
+                        <img src="./Galeria/Uriburu/uri7.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"><a href="./pages/reservas.html">Reservá en Uriburu</a></button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Galeria</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <!-- Guido -->
             <article class="guidoGaleria">
                 <img class="imgGaleria" src="./Galeria/Guido/Principal Guido.png" alt="guido">
                 <h2 class="tituloGaleria">RECOLETA PLAZA GUIDO</h2>
-                <div class="verMas d-grid gap-2 col-6 mx-auto">
-                    <a class="verMas btn btn-primary" href="./pages/ubicaciones.html" type="button">Ver más</a>
-                </div>
             </article>
+            <button type="botonGuido button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGuido">
+                Galeria de Guido
+            </button>
+            <div class="modalGuido modal fade" id="modalGuido" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Galeria de Recoleta Plaza Guido</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./Galeria/Guido/Principal Guido.png" alt="">
+                        <img src="./Galeria/Guido/guido1.png" alt="">
+                        <img src="./Galeria/Guido/guido2.png" alt="">
+                        <img src="./Galeria/Guido/guido3.png" alt="">
+                        <img src="./Galeria/Guido/guido4.png" alt="">
+                        <img src="./Galeria/Guido/guido5.png" alt="">
+                        <img src="./Galeria/Guido/guido6.png" alt="">
+                        <img src="./Galeria/Guido/guido7.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"><a href="./pages/reservas.html">Reservá en Guido</a></button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar  Galeria</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </section>    
     </div>
 

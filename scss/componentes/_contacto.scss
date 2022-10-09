@@ -9,9 +9,19 @@
     .contacto{
         width: 50%;
         margin: 20px 50px;
+        div{
+            font-family: $txt-secundario;
+            color: $bg-darkbrown;
+            font-weight: 400;
+            font-size: nth($fontsize , 1 );     
+            text-align: center;
+            .icon{
+                width: 20px;
+            }
+        }
         form{
             margin: 0;
-        }
+        }    
     }
 }
 

@@ -67,23 +67,52 @@
         margin: 50px 0;    
     }
     section{
-        @include disposicion(flex, row, space-evenly, center);
-        flex-wrap: wrap;
+        // @include disposicion(flex, row, space-evenly, center);
+        // flex-wrap: wrap;
+        display: grid;
+        display: grid;
+        width: auto;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr;
+        grid-template-areas: 
+        "palGal urGal griGal"
+        "botPal botUr botGui" ;   
         margin: 60px 0 150px;
-        padding: 0;    
+        padding: 0;   
+        .palermoGaleria{
+            grid-area: palGal;
+        } 
+        .uriburuGaleria{
+            grid-area: urGal;
+        }
+        .guidoGaleria{
+            grid-area: griGal;
+        }
+        .botonPalermo{
+            grid-area: botPal;
+        }
+        .botonUri{
+            grid-area: botUr;
+        }
+        .botonGuido{
+            grid-area: botGui;
+        }
         article{
             text-align: center;
             padding: 0;
             margin: 10px;
             border: 1px solid $bg-lightbrown;
             border-radius: 5%;
-            padding: 50px 20px;
+            padding: 20px 20px;
             filter: drop-shadow(0px 0px 0.5px grey);
             h2{
                 font-family: 'Acme', sans-serif;
+                color: $bg-darkbrown;
                 font-weight: 300;
                 font-size: 25px;
-                margin-top: 5px;            
+                margin-top: 20px;            
             }
             div{
                 font-family: $txt-secundario;
@@ -118,8 +147,54 @@
             }
         
         }
+        button{
+            font-family: $txt-secundario;
+            background-color: $bg-darkbrown;
+            font-weight: 300;
+            font-size: nth($fontsize , 2 );
+            border: $bg-darkbrown solid 2px;
+            &:hover{
+                --bs-btn-hover-bg: #dfcdb4;
+                --bs-btn-hover-border-color: #dfcdb4; 
+                --bs-btn-bg: #dfcdb4;
+                --bs-btn-border-color: #dfcdb4;
+                --bs-btn-active-bg: #dfcdb4;
+                --bs-btn-active-border-color: #dfcdb4;                
+            }    
+        }
+        div{
+            h2{
+                font-family: $txt-principal;
+                color: $bg-darkbrown;       
+                font-size: 20px;
+                text-align: center;
+            }
+            img{
+                margin: 20px 0;
+                width: 100%;
+            }
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }    
+        
     }
 }
+
+
+/*Pantalla 1300*/
+
+@media screen and (max-width:1300px){
+    .ubiGaleria section{
+        display: flex;
+        flex-direction: column;
+        article img{
+            width: 500px;
+        }
+    }
+}
+
 
 /*Pantalla 768-900*/
 
@@ -133,14 +208,9 @@
         }
     }
     .ubiGaleria{
-        .Galeria{
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center; 
-            img{
+        .Galeria article img{
                 width: 400px;
-            }    
-        }
+        }    
     }
 }
 
@@ -205,9 +275,9 @@
                 img{
                     width: 280px;
                 }
-                div a{
-                    font-size: 15px;
-                }
+            }
+            button{
+                font-size: 15px;
             }
         }
     } 

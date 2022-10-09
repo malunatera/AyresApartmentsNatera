@@ -311,13 +311,34 @@ header .titulo div h1 {
   margin: 50px 0;
 }
 .ubiGaleria section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  display: grid;
+  width: auto;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-areas: "palGal urGal griGal" "botPal botUr botGui";
   margin: 60px 0 150px;
   padding: 0;
+}
+.ubiGaleria section .palermoGaleria {
+  grid-area: palGal;
+}
+.ubiGaleria section .uriburuGaleria {
+  grid-area: urGal;
+}
+.ubiGaleria section .guidoGaleria {
+  grid-area: griGal;
+}
+.ubiGaleria section .botonPalermo {
+  grid-area: botPal;
+}
+.ubiGaleria section .botonUri {
+  grid-area: botUr;
+}
+.ubiGaleria section .botonGuido {
+  grid-area: botGui;
 }
 .ubiGaleria section article {
   text-align: center;
@@ -325,14 +346,15 @@ header .titulo div h1 {
   margin: 10px;
   border: 1px solid #dfcdb4;
   border-radius: 5%;
-  padding: 50px 20px;
+  padding: 20px 20px;
   filter: drop-shadow(0px 0px 0.5px grey);
 }
 .ubiGaleria section article h2 {
   font-family: "Acme", sans-serif;
+  color: #6b5d4d;
   font-weight: 300;
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .ubiGaleria section article div {
   font-family: "Lato", sans-serif;
@@ -365,7 +387,46 @@ header .titulo div h1 {
   transform: scale(1.1);
   transition: 1.5s;
 }
+.ubiGaleria section button {
+  font-family: "Lato", sans-serif;
+  background-color: #6b5d4d;
+  font-weight: 300;
+  font-size: 20px;
+  border: #6b5d4d solid 2px;
+}
+.ubiGaleria section button:hover {
+  --bs-btn-hover-bg: #dfcdb4;
+  --bs-btn-hover-border-color: #dfcdb4;
+  --bs-btn-bg: #dfcdb4;
+  --bs-btn-border-color: #dfcdb4;
+  --bs-btn-active-bg: #dfcdb4;
+  --bs-btn-active-border-color: #dfcdb4;
+}
+.ubiGaleria section div h2 {
+  font-family: "Acme", sans-serif;
+  color: #6b5d4d;
+  font-size: 20px;
+  text-align: center;
+}
+.ubiGaleria section div img {
+  margin: 20px 0;
+  width: 100%;
+}
+.ubiGaleria section button a {
+  text-decoration: none;
+  color: white;
+}
 
+/*Pantalla 1300*/
+@media screen and (max-width: 1300px) {
+  .ubiGaleria section {
+    display: flex;
+    flex-direction: column;
+  }
+  .ubiGaleria section article img {
+    width: 500px;
+  }
+}
 /*Pantalla 768-900*/
 @media screen and (max-width: 900px) {
   .inicio div {
@@ -374,12 +435,7 @@ header .titulo div h1 {
   .inicio div p {
     padding: 0 50px;
   }
-  .ubiGaleria .Galeria {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .ubiGaleria .Galeria img {
+  .ubiGaleria .Galeria article img {
     width: 400px;
   }
 }
@@ -437,7 +493,7 @@ header .titulo div h1 {
   .ubiGaleria .Galeria article img {
     width: 280px;
   }
-  .ubiGaleria .Galeria article div a {
+  .ubiGaleria .Galeria button {
     font-size: 15px;
   }
 }
@@ -870,6 +926,16 @@ header .titulo div h1 {
 .cajaContactos .contacto {
   width: 50%;
   margin: 20px 50px;
+}
+.cajaContactos .contacto div {
+  font-family: "Lato", sans-serif;
+  color: #6b5d4d;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+.cajaContactos .contacto div .icon {
+  width: 20px;
 }
 .cajaContactos .contacto form {
   margin: 0;
