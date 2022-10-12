@@ -82,32 +82,43 @@ header{
         }    
     }
 }
-.barra ul{
-    width: 100%;
-    height: auto;
-    @include disposicion(flex, row, space-evenly, center);
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    li{
-        background-color: $bg-darkbrown;    
-        padding: 5px;
-        width: 20%;
-        font-family: $txt-principal;
-        font-size: nth($fontsize, 2);
-        font-weight: 400;
-        text-align: center;
-        border-radius: 30px;
-        &:hover{
-            transform: scale(0.9);
-        }
-        a, a:-webkit-any-link{
-            text-decoration: none;
-            color: white;
-            width: auto;        
-        }
+.barra{
+    img{
+        display: none;
     }
-        
+    p{
+        display: none;
+        font-family: $txt-principal;
+        font-size: 30px;
+        text-align: right;
+        color: $bg-darkbrown;       
+    }
+    ul{
+        width: 100%;
+        height: auto;
+        @include disposicion(flex, row, space-evenly, center);
+        list-style: none;
+        margin: 0%;
+        padding: 0%;
+        li{
+            background-color: $bg-darkbrown;    
+            padding: 5px;
+            width: 20%;
+            font-family: $txt-principal;
+            font-size: nth($fontsize, 2);
+            font-weight: 400;
+            text-align: center;
+            border-radius: 30px;
+            &:hover{
+                transform: scale(0.9);
+            }
+            a, a:-webkit-any-link{
+                text-decoration: none;
+                color: white;
+                width: auto;        
+            }
+        }
+    } 
 }
 
 /*Pantalla 768-990*/
@@ -116,6 +127,13 @@ header{
     .encabezado nav{
         div .barra{
             width: 50%;
+            img{
+                display: initial;
+                width: 80%;
+            }        
+            p{
+                display: initial;
+            }
             h5{
                 font-family: $txt-principal;
                 font-size: 30px;
@@ -152,12 +170,15 @@ header{
     .encabezado{
         grid-template-rows: 1fr;
         nav div .barra{
-                h5{
-                    font-size: 25px;
-                }
-                ul li a {
-                    font-size: 15px;
-                } 
+            img{
+                width: 100%;
+            }
+            p, h5{
+                font-size: 25px;
+            }
+            ul li a {
+                font-size: 15px;
+            } 
         }
     }
     .reservasInicio{   
@@ -177,7 +198,7 @@ header{
         width: 40px;
     }
     .encabezado nav div .barra{
-        h5{
+        h5, p{
             font-size: 20px;
         }
         ul li{
