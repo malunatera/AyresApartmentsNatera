@@ -85,11 +85,12 @@ header{
 .barra{
     img{
         display: none;
+        width: 60%;
     }
     p{
         display: none;
         font-family: $txt-principal;
-        font-size: 30px;
+        font-size: 20px;
         text-align: right;
         color: $bg-darkbrown;       
     }
@@ -129,7 +130,6 @@ header{
             width: 50%;
             img{
                 display: initial;
-                width: 80%;
             }        
             p{
                 display: initial;
@@ -173,7 +173,10 @@ header{
             img{
                 width: 70%;
             }
-            p, h5{
+            p{
+                font-size: 15px;
+            }
+            h5{
                 font-size: 25px;
             }
             ul li a {

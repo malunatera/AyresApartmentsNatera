@@ -128,11 +128,12 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
 
 .barra img {
   display: none;
+  width: 60%;
 }
 .barra p {
   display: none;
   font-family: "Acme", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   text-align: right;
   color: #6b5d4d;
 }
@@ -173,7 +174,6 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
   }
   .encabezado nav div .barra img {
     display: initial;
-    width: 80%;
   }
   .encabezado nav div .barra p {
     display: initial;
@@ -208,7 +208,10 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
   .encabezado nav div .barra img {
     width: 70%;
   }
-  .encabezado nav div .barra p, .encabezado nav div .barra h5 {
+  .encabezado nav div .barra p {
+    font-size: 15px;
+  }
+  .encabezado nav div .barra h5 {
     font-size: 25px;
   }
   .encabezado nav div .barra ul li a {
