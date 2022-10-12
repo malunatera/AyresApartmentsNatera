@@ -206,7 +206,7 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
     grid-template-rows: 1fr;
   }
   .encabezado nav div .barra img {
-    width: 100%;
+    width: 70%;
   }
   .encabezado nav div .barra p, .encabezado nav div .barra h5 {
     font-size: 25px;
