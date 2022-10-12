@@ -68,8 +68,12 @@ footer{
                 .redes{
                     width: 40px;
                     height: 40px;
+                    margin: 0 2px;
                     img{
                         width: 100%;
+                        &:hover{
+                            transform: scale(1.1);
+                        }    
                     }
                 }   
             }

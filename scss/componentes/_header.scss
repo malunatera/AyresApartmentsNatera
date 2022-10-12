@@ -86,12 +86,13 @@ header{
     img{
         display: none;
         width: 60%;
+        align-self: flex-end;
     }
     p{
         display: none;
         font-family: $txt-principal;
-        font-size: 20px;
-        text-align: right;
+        font-size: 30px;
+        text-align: left;
         color: $bg-darkbrown;       
     }
     ul{
@@ -174,7 +175,7 @@ header{
                 width: 70%;
             }
             p{
-                font-size: 15px;
+                font-size: 20px;
             }
             h5{
                 font-size: 25px;
@@ -201,7 +202,10 @@ header{
         width: 40px;
     }
     .encabezado nav div .barra{
-        h5, p{
+        p{
+            font-size: 15px;
+        }
+        h5{
             font-size: 20px;
         }
         ul li{
