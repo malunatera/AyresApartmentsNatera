@@ -689,16 +689,13 @@ header .titulo div h1 {
 }
 .ubicacion .guido .boton a, .ubicacion .palermo .boton a, .ubicacion .uriburu .boton a {
   background-color: #6b5d4d;
-  border: #6b5d4d;
+  border: #6b5d4d 1px solid;
   color: white;
 }
 .ubicacion .guido .boton a:hover, .ubicacion .palermo .boton a:hover, .ubicacion .uriburu .boton a:hover {
-  --bs-btn-hover-bg: #dfcdb4;
-  --bs-btn-hover-border-color: #dfcdb4;
-  --bs-btn-bg: #dfcdb4;
-  --bs-btn-border-color: #dfcdb4;
-  --bs-btn-active-bg: #dfcdb4;
-  --bs-btn-active-border-color: #dfcdb4;
+  background-color: #dfcdb4;
+  color: white;
+  border: #6b5d4d 1px solid;
 }
 
 .guido {
@@ -850,6 +847,7 @@ header .titulo div h1 {
   font-family: "Lato", sans-serif;
   color: #6b5d4d;
   font-size: 15px;
+  margin: 10px 0;
   list-style: none;
 }
 .input .tarifario li img {
@@ -882,6 +880,10 @@ header .titulo div h1 {
   border: #6b5d4d 1px solid;
   margin: 0;
 }
+.formularioReserva div div .check:checked {
+  background-color: #6b5d4d;
+  border-color: #6b5d4d;
+}
 .formularioReserva .botonReserva {
   display: flex;
   flex-direction: column;
@@ -892,22 +894,54 @@ header .titulo div h1 {
   background-color: #6b5d4d;
   font-family: "Acme", sans-serif;
   font-size: 20px;
-  border: #6b5d4d;
+  border: #6b5d4d 1px solid;
   color: white;
   margin: 10px;
   width: 50%;
 }
 .formularioReserva .botonReserva button:hover {
-  --bs-btn-hover-bg: #dfcdb4;
-  --bs-btn-hover-border-color: #dfcdb4;
-  --bs-btn-bg: #dfcdb4;
-  --bs-btn-border-color: #dfcdb4;
-  --bs-btn-active-bg: #dfcdb4;
-  --bs-btn-active-border-color: #dfcdb4;
+  background-color: #dfcdb4;
   color: #6b5d4d;
-  border: #6b5d4d 3px solid;
+  border: #6b5d4d 1px solid;
 }
 
+/*Pantalla 900*/
+@media screen and (max-width: 900px) {
+  .reservas {
+    margin: 50px 20px;
+  }
+  .reservas div {
+    width: 150px;
+  }
+  .formularioReserva {
+    margin: 50px 20px;
+  }
+}
+/*Pantalla 660-768*/
+@media screen and (max-width: 768px) {
+  .reservas div {
+    width: 250px;
+  }
+  .formularioReserva div p {
+    font-size: 25px;
+  }
+}
+/*Pantalla 320-500*/
+@media screen and (max-width: 560px) {
+  .reservas div {
+    width: 100%;
+    height: 80px;
+  }
+  .formularioReserva div p {
+    font-size: 20px;
+  }
+  .formularioReserva div label, .formularioReserva div input, .formularioReserva div select {
+    font-size: 15px;
+  }
+  .formularioReserva .botonReserva button {
+    font-size: 15px;
+  }
+}
 .cajaContactos {
   display: flex;
   flex-direction: row;
@@ -923,24 +957,109 @@ header .titulo div h1 {
   justify-content: center;
   align-items: space-evenly;
 }
+.cajaContactos .cajaUbi .ubiThames, .cajaContactos .cajaUbi .ubiRecoleta {
+  margin: 10px 0;
+}
+.cajaContactos .cajaUbi .ubiThames .distancias, .cajaContactos .cajaUbi .ubiRecoleta .distancias {
+  font-family: "Lato", sans-serif;
+  color: #6b5d4d;
+  font-weight: 400;
+  font-size: 15px;
+}
+.cajaContactos .cajaUbi .ubiThames .distancias h5, .cajaContactos .cajaUbi .ubiRecoleta .distancias h5 {
+  font-family: "Acme", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  background: rgb(223, 205, 180);
+  background: radial-gradient(circle, rgb(223, 205, 180) 0%, rgb(255, 255, 255) 100%);
+}
 .cajaContactos .contacto {
   width: 50%;
-  margin: 20px 50px;
+  margin: 20px 40px;
 }
-.cajaContactos .contacto div {
+.cajaContactos .contacto .encabezadoFormulario p, .cajaContactos .contacto .encabezadoFormulario .num, .cajaContactos .contacto .encabezadoFormulario .correo {
   font-family: "Lato", sans-serif;
   color: #6b5d4d;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
 }
-.cajaContactos .contacto div .icon {
+.cajaContactos .contacto .encabezadoFormulario div .icon {
   width: 20px;
 }
-.cajaContactos .contacto form {
+.cajaContactos .contacto .formulario form {
+  margin: 0;
+  background-color: #dfcdb4;
+  border-radius: 10px;
+}
+.cajaContactos .contacto .formulario form div p {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  color: #6b5d4d;
+  text-align: center;
+}
+.cajaContactos .contacto .formulario form div label {
+  font-family: "Acme", sans-serif;
+  font-weight: 200;
+  color: #6b5d4d;
+  font-size: 15px;
+  text-align: start;
+}
+.cajaContactos .contacto .formulario form div select, .cajaContactos .contacto .formulario form div input {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  color: #6b5d4d;
+  border: #6b5d4d 1px solid;
   margin: 0;
 }
+.cajaContactos .contacto .formulario form div div .check:checked {
+  background-color: #6b5d4d;
+  border-color: #6b5d4d;
+}
+.cajaContactos .contacto .formulario form .botonContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cajaContactos .contacto .formulario form .botonContacto button {
+  background-color: #6b5d4d;
+  font-family: "Acme", sans-serif;
+  font-size: 20px;
+  border: #6b5d4d 1px solid;
+  color: white;
+  margin: 10px;
+  width: 50%;
+}
+.cajaContactos .contacto .formulario form .botonContacto button:hover {
+  background-color: #dfcdb4;
+  color: #6b5d4d;
+  border: #6b5d4d 1px solid;
+}
 
+/*Pantalla 900*/
+@media screen and (max-width: 900px) {
+  .cajaContactos .cajaUbi {
+    margin: 20px;
+  }
+  .cajaContactos .contacto {
+    margin: 20px;
+  }
+  .cajaContactos .contacto .encabezadoFormulario div, .cajaContactos .contacto .encabezadoFormulario p {
+    font-size: 12px;
+  }
+  .cajaContactos .contacto .formulario form div p {
+    font-size: 20px;
+  }
+  .cajaContactos .contacto .formulario form div label, .cajaContactos .contacto .formulario form div input, .cajaContactos .contacto .formulario form div select {
+    font-size: 12px;
+  }
+  .cajaContactos .contacto .formulario form .botonContacto button {
+    font-size: 15px;
+  }
+}
 /*Pantalla 660-768*/
 @media screen and (max-width: 768px) {
   .cajaContactos {
@@ -954,14 +1073,35 @@ header .titulo div h1 {
   .cajaContactos .contacto {
     width: 80%;
   }
+  .cajaContactos .contacto .encabezadoFormulario div, .cajaContactos .contacto .encabezadoFormulario p {
+    font-size: 12px;
+  }
+  .cajaContactos .contacto .formulario form div p {
+    font-size: 25px;
+  }
+  .cajaContactos .contacto .formulario form div label, .cajaContactos .contacto .formulario form div input, .cajaContactos .contacto .formulario form div select {
+    font-size: 15px;
+  }
+  .cajaContactos .contacto .formulario form .botonContacto button {
+    font-size: 15px;
+  }
 }
 /*Pantalla 320-500*/
 @media screen and (max-width: 500px) {
   .cajaContactos .cajaUbi {
     flex-direction: column;
   }
+  .cajaContactos .cajaUbi .distancias {
+    font-size: 15px;
+  }
+  .cajaContactos .cajaUbi .distancias h5 {
+    font-size: 20px;
+  }
   .cajaContactos .contacto {
     width: 100%;
+  }
+  .cajaContactos .contacto .formulario form div p {
+    font-size: 20px;
   }
 }
 footer {

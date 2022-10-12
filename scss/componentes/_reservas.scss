@@ -87,6 +87,7 @@
             font-family: $txt-secundario;
             color: $bg-darkbrown;
             font-size: 15px;
+            margin: 10px 0;
             list-style: none;
             img{
                 width: 25px;
@@ -120,26 +121,82 @@
             margin: 0;  
         }
     }
+    div div .check:checked{
+        background-color: $bg-darkbrown;
+        border-color: $bg-darkbrown
+    }
     .botonReserva{
         @include disposicion(flex, column, none, center);
         button{
             background-color: $bg-darkbrown;
             font-family: $txt-principal;
             font-size: 20px;
-            border: $bg-darkbrown;
+            border: $bg-darkbrown 1px solid;
             color: white;
             margin: 10px;
             width: 50%;
             &:hover{
-                --bs-btn-hover-bg: #dfcdb4;
-                --bs-btn-hover-border-color: #dfcdb4; 
-                --bs-btn-bg: #dfcdb4;
-                --bs-btn-border-color: #dfcdb4;
-                --bs-btn-active-bg: #dfcdb4;
-                --bs-btn-active-border-color: #dfcdb4; 
+                background-color: $bg-lightbrown;
                 color: $bg-darkbrown;            
-                border: $bg-darkbrown 3px solid;
+                border: $bg-darkbrown 1px solid;
             }
         }       
+    }
+}
+
+
+/*Pantalla 900*/
+
+@media screen and (max-width:900px){
+    .reservas{
+        margin: 50px 20px;
+        div{
+            width: 150px;
+        }
+    }
+    .formularioReserva{
+        margin: 50px 20px;
+    }
+}
+
+
+/*Pantalla 660-768*/
+
+@media screen and (max-width:768px){
+    .reservas{
+        div{
+            width: 250px;
+        }
+    }
+    .formularioReserva{
+        div p{
+            font-size: 25px;
+        }
+    }
+}
+
+
+
+/*Pantalla 320-500*/
+
+@media screen and (max-width:560px){
+    .reservas{
+        div{
+            width: 100%;
+            height: 80px;
+        }
+    }
+    .formularioReserva{
+        div {
+            p{
+                font-size: 20px;
+            }
+            label, input, select{
+                    font-size: 15px;
+            }
+        }    
+        .botonReserva button{
+                font-size: 15px;
+        }
     }
 }

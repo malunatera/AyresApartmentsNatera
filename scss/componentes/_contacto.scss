@@ -5,25 +5,129 @@
         width: 50%;
         margin: 20px 50px;
         @include disposicion(flex, column, center, space-evenly);
+        .ubiThames, .ubiRecoleta{
+            margin: 10px 0;
+            .distancias{
+                font-family: $txt-secundario;
+                color: $bg-darkbrown;
+                font-weight: 400;
+                font-size: nth($fontsize , 1 );
+                h5{
+                    font-family: $txt-principal;
+                    font-size: nth($fontsize , 3 );
+                    text-align: center;
+                    background: map-get($map: $tituloCard, $key: bgCard);
+                    background: map-get($map: $tituloCard, $key: bgCard2);        
+                }
+            }    
+        }
     }
     .contacto{
         width: 50%;
-        margin: 20px 50px;
-        div{
-            font-family: $txt-secundario;
-            color: $bg-darkbrown;
-            font-weight: 400;
-            font-size: nth($fontsize , 1 );     
-            text-align: center;
-            .icon{
+        margin: 20px 40px;
+        .encabezadoFormulario{
+            p, .num, .correo{
+                font-family: $txt-secundario;
+                color: $bg-darkbrown;
+                font-weight: 400;
+                font-size: nth($fontsize , 1 );     
+                text-align: center;
+            }
+            div .icon{
                 width: 20px;
             }
         }
-        form{
-            margin: 0;
+        .formulario{
+            form{
+                margin: 0;
+                background-color: $bg-lightbrown;
+                border-radius: 10px;    
+                div p{
+                    font-family: $txt-principal;
+                    font-size: 30px;
+                    color: $bg-darkbrown;
+                    text-align: center;
+                }
+                div{
+                    label{
+                        font-family: $txt-principal;
+                        font-weight: 200;
+                        color: $bg-darkbrown;
+                        font-size: 15px;    
+                        text-align: start;
+                    }
+                    select, input{
+                        font-family: $txt-secundario;
+                        font-size: 15px;
+                        border-radius: 10px;
+                        padding: 5px;
+                        color: $bg-darkbrown;
+                        border: $bg-darkbrown 1px solid;
+                        margin: 0;  
+                    }
+                }
+                div div .check:checked{
+                    background-color: $bg-darkbrown;
+                    border-color: $bg-darkbrown
+                }
+                .botonContacto{
+                    @include disposicion(flex, column, center, center);
+                    button{
+                        background-color: $bg-darkbrown;
+                        font-family: $txt-principal;
+                        font-size: 20px;
+                        border: $bg-darkbrown 1px solid;
+                        color: white;
+                        margin: 10px;
+                        width: 50%;
+                        &:hover{
+                            background-color: $bg-lightbrown;
+                            color: $bg-darkbrown;            
+                            border: $bg-darkbrown 1px solid;                                    
+                        }
+                    }       
+                }                    
+            }
         }    
     }
 }
+
+
+
+/*Pantalla 900*/
+
+@media screen and (max-width:900px){
+    .cajaContactos{
+        .cajaUbi{
+            margin: 20px;
+        }
+        .contacto{
+            margin: 20px;
+            .encabezadoFormulario{
+                div, p{
+                    font-size: 12px;
+                }
+            }
+            .formulario{
+                form{
+                    div {
+                        p{
+                            font-size: 20px;
+                        }
+                        label, input, select{
+                                font-size: 12px;
+                        }
+                    }    
+                    .botonContacto button{
+                            font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 
 /*Pantalla 660-768*/
 
@@ -37,6 +141,26 @@
         }
         .contacto{
             width: 80%;
+            .encabezadoFormulario{
+                div, p{
+                    font-size: 12px;
+                }
+            }
+            .formulario{
+                form{
+                    div {
+                        p{
+                            font-size: 25px;
+                        }
+                        label, input, select{
+                                font-size: 15px;
+                        }
+                    }    
+                    .botonContacto button{
+                            font-size: 15px;
+                    }
+                }
+            }
         }
     }    
 }
@@ -47,9 +171,20 @@
     .cajaContactos{
         .cajaUbi{
             flex-direction: column;
+            .distancias{
+                font-size: 15px;
+                h5{
+                    font-size: 20px;
+                }
+            }
         }
         .contacto{
             width: 100%;
+            .formulario{
+                form div p{
+                    font-size: 20px;
+                }
+            }
         }
     }    
 }
