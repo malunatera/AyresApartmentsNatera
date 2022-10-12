@@ -138,14 +138,27 @@ header{
         
 }
 
-/*Pantalla 768-900*/
+/*Pantalla 768-990*/
 
-@media screen and (max-width:900px) {
-.encabezado nav{
-    div .barra ul{
-        flex-direction: column;
+@media screen and (max-width:990px) {
+    .encabezado nav{
+        div .barra{
+            width: 50%;
+            h5{
+                font-family: $txt-principal;
+                font-size: 30px;
+                text-align: center;
+                color: $bg-darkbrown;       
+            }
+            ul{
+                flex-direction: column;
+                li{
+                    width: 100%;
+                    margin: 10px;
+                }
+            }
+        } 
     }
-}
 }
 
 
@@ -164,11 +177,16 @@ header{
     #logo {
         width: 60px;
     }  
-    header .encabezado{
+    .encabezado{
         grid-template-rows: 1fr;
-    }
-    .barra ul li a {
-        font-size: 15px;
+        nav div .barra{
+                h5{
+                    font-size: 25px;
+                }
+                ul li a {
+                    font-size: 15px;
+                } 
+        }
     }
     .reservasInicio{   
         font-size: 10px;
@@ -199,9 +217,16 @@ header{
     #logo {
         width: 40px;
     }
-    .barra ul li a{
-        font-size: 12px;
-    }
+    .encabezado nav div .barra{
+        h5{
+            font-size: 20px;
+        }
+        ul li{
+             a{
+                font-size: 12px;
+            }
+        } 
+    } 
     .titulo{
         .textoTitulo{
             p{
