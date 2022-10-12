@@ -29,7 +29,7 @@ header{
         }
         .reservasInicio{
             grid-area: reser;
-            margin: 0 30px;
+            margin: 0 30px 5px;
             padding: 0;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
@@ -80,34 +80,6 @@ header{
                 margin: 0;  
             }
         }    
-    }
-    .titulo{
-        width: auto;
-        height: 100%;
-        @include disposicion(flex, column, center, center);
-        position: relative;
-        background-color: black;
-            div{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                @include disposicion(flex, column, center, center);
-                text-align: center;
-                background: black;
-                background: $bg-video;            
-            p{
-                @extend %tituloSecundario
-            }
-            .ayresapartments{
-                margin: 0;
-                @extend %tituloPrincipal
-            }
-            h1{
-                margin: 0;
-                @extend %tituloTerciario
-            }
-        }
-
     }
 }
 .barra ul{
@@ -197,19 +169,6 @@ header{
             }
         }
     }
-    .titulo{
-        .textoTitulo{
-            p{
-                font-size: 20px;
-            }
-            .ayresapartments{
-                font-size: 35px;
-            }
-            h1{
-                font-size: 10px;
-            }
-        }
-    }
 }
 
 /*Pantalla 320-500*/
@@ -227,17 +186,4 @@ header{
             }
         } 
     } 
-    .titulo{
-        .textoTitulo{
-            p{
-                font-size: 10px;
-            }
-            .ayresapartments{
-                font-size: 20px;
-            }
-            h1{
-                font-size: 8px;
-            }
-        }
-    }
 }
