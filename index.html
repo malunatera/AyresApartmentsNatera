@@ -26,20 +26,26 @@
 
     <header>
         <div class="encabezado">
-            <nav class=" menuPrincipal navbar navbar-expand-lg">
+            <nav class="menuPrincipal navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html"><img id="logo" src="./Galeria/LogoSinFondo.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="barra collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./pages/servicios.html">Servicios</a></li>
-                            <li><a href="./pages/ubicaciones.html">Ubicaciones</a></li>
-                            <li><a href="./pages/reservas.html">Reservas</a></li>
-                            <li><a href="./pages/contacto.html">Contacto</a></li>
-                        </ul>
+                    <div class="barra offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AYRES APARTMENTS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a href="./pages/servicios.html">Servicios</a></li>
+                                <li><a href="./pages/ubicaciones.html">Ubicaciones</a></li>
+                                <li><a href="./pages/reservas.html">Reservas</a></li>
+                                <li><a href="./pages/contacto.html">Contacto</a></li>    
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
