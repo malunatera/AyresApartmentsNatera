@@ -338,3 +338,16 @@
 }
 
 
+/*Pantalla 280px - 300px*/
+
+@media screen and (max-width:300px){
+    .ubiGaleria{
+        .Galeria{
+            article{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    } 
+}

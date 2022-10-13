@@ -544,6 +544,12 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
     font-size: 15px;
   }
 }
+/*Pantalla 280px - 300px*/
+@media screen and (max-width: 300px) {
+  .ubiGaleria .Galeria article img {
+    width: 250px;
+  }
+}
 .seccionMenu {
   display: flex;
   flex-direction: column;
@@ -828,6 +834,10 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
   margin: 0;
 }
 
+.logocard {
+  width: 100%;
+}
+
 .input {
   display: flex;
   flex-direction: column;
@@ -873,7 +883,7 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
   border-color: red;
 }
 .input .precio {
-  width: 300px;
+  width: 100%;
   background-color: red;
   border-radius: 10px;
   margin: 10px 0;
@@ -987,6 +997,15 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
   }
   .formularioReserva .botonReserva button {
     font-size: 15px;
+  }
+}
+/*Pantalla 280px - 300px*/
+@media screen and (max-width: 300px) {
+  .input .cajaTarifa {
+    width: 250px;
+  }
+  .input .precio h4 {
+    font-size: 20px;
   }
 }
 .cajaContactos {

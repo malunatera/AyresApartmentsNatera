@@ -26,7 +26,9 @@
         }
     }
 }
-
+.logocard{
+    width: 100%
+}
 .input{
     @include disposicion(flex, column, none, center);
     a{
@@ -65,7 +67,7 @@
             border-color: red;
     }
     .precio{
-        width: 300px;
+        width: 100%;
         background-color: red;
         border-radius: 10px;
         margin: 10px 0;
@@ -200,3 +202,20 @@
         }
     }
 }
+
+
+/*Pantalla 280px - 300px*/
+
+@media screen and (max-width:300px){
+    .input{
+        .cajaTarifa{
+            width: 250px;
+        }
+        .precio{
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
