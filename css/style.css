@@ -137,6 +137,7 @@ header .encabezado .reservasInicio select, header .encabezado .reservasInicio in
   font-size: 30px;
   text-align: left;
   color: #6b5d4d;
+  margin: 0;
 }
 .barra ul {
   width: 100%;
